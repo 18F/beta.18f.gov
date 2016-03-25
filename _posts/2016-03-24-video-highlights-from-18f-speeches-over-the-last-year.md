@@ -43,9 +43,8 @@ Hartley and Aaron Snow present to California’s Little Hoover Commission
 about the ideas that started 18F, the principles that guide us, and the
 work we do.
 
-<iframe width="800" height="450"
-src="https://www.youtube-nocookie.com/embed/c1MCyS-O_3Y"
-frameborder="0" allowfullscreen></iframe>
+
+{{ "https://www.youtube-nocookie.com/embed/c1MCyS-O_3Y"| embed }}
 
 Team culture
 ------------

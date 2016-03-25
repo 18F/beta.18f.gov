@@ -2,6 +2,8 @@
 title: "18F: Digital service delivery"
 description: "A fresh start for 18f.gsa.gov"
 baseurl: "" # the subpath of your site, e.g. /blog/
+permalink: pretty
+tags_dir: tags
 url: "https://beta.18f.gov" # the base hostname & protocol for your site
 logo: /assets/img/logos/18F-Logo-Bright-S.png
 feature_image: /assets/img/feature-background.jpg
@@ -28,10 +30,14 @@ colors:
 
 analytics:
   google:
-    code: 'UA-48605964-32' # Change this to your GSA analytics code
+    code: '' # Change this to your GSA analytics code
   dap:
     agency: GSA    # Change this to your agency
     subagency: 18F # Change this to your agency
+
+#blog archive at /blog
+paginate: 5
+paginate_path: "blog/page/:num"
 
 collections:
   team:
@@ -47,22 +53,19 @@ collections:
 defaults:
  -
   scope:
-    path: "_posts" # an empty string here means all files in the project
+    type: "posts" # an empty string here means all files in the project
   values:
-    layout:
-      - post
+    layout: post
  -
   scope:
     path: "pages"
   values:
-    layout:
-      - page
+    layout: page
  -
   scope:
     path: "team"
   values:
-    layout:
-      - page
+    layout: page
 
 forms:
 - type: newsletter
@@ -93,3 +96,18 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.md
   - README.md
+
+# jekyll plugins
+gems:
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-redirect-from
+  - jekyll-feed
+
+jekyll-archives:
+  enabled:
+    - 'tags'
+  layout: tag_index
+  permalinks:
+    tag: '/tags/:name/'
+
