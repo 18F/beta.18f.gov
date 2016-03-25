@@ -1,9 +1,9 @@
 # Site settings
-title: Your Site Name
-description: A description of your website that will show up in search indexes and social media shares.
+title: "18F: Digital service delivery"
+description: "A fresh start for 18f.gsa.gov"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://example.gov" # the base hostname & protocol for your site
-logo: /assets/img/logo-main.gif
+url: "https://beta.18f.gov" # the base hostname & protocol for your site
+logo: /assets/img/logos/18F-Logo-Bright-S.png
 feature_image: /assets/img/feature-background.jpg
 
 colors:
@@ -33,16 +33,36 @@ analytics:
     agency: GSA    # Change this to your agency
     subagency: 18F # Change this to your agency
 
+collections:
+  team:
+    permalink: /team/:name/
+    output: true
+  cards:
+    output: true
+    permalink: /card/:name/
+  press:
+    output: true
+    permalink: /press/:name/
+
 defaults:
  -
   scope:
-    path: "" # an empty string here means all files in the project
+    path: "_posts" # an empty string here means all files in the project
   values:
     layout:
-      - home
+      - post
+ -
+  scope:
+    path: "pages"
+  values:
+    layout:
       - page
-      - "project-list"
-      - project
+ -
+  scope:
+    path: "team"
+  values:
+    layout:
+      - page
 
 forms:
 - type: newsletter
