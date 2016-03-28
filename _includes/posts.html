@@ -1,0 +1,21 @@
+{% if page.name == "home.md" %}
+  {% assign posts = site.posts %}
+{% else %}
+    {% assign posts = paginator.posts %}
+{% endif %}
+{% for post in posts limit:6 %}
+  {% unless project.featured %}
+    {% assign third = forloop.index | modulo: 3 %}
+    {% if third == 1 %}
+    <div class="usa-width-one-third usa-end-row project">
+    {% else %}
+    <div class="usa-width-one-third project">
+    {% endif %}
+      <a href="{{ post.link | prepend: site.baseurl }}">
+        <span class="project--image" style="background-image: url({{ post.image | prepend: site.baseurl }});"></span>
+        <h3 class="project--description"><span>{{ post.title }}&nbsp;&gt;</span></h3>
+      </a>
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endunless %}
+{% endfor %}

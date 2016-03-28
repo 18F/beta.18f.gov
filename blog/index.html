@@ -1,0 +1,9 @@
+---
+---
+<h1>Blog</h1>
+{% for post in paginator.posts %}
+<section>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.description }}</p>
+</section>
+{% endfor %}

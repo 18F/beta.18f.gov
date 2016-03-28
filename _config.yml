@@ -36,8 +36,8 @@ analytics:
     subagency: 18F # Change this to your agency
 
 #blog archive at /blog
-paginate: 5
-paginate_path: "blog/page/:num"
+paginate: 6
+paginate_path: "blog/page/:num/"
 
 collections:
   team:
@@ -82,10 +82,11 @@ forms:
       value: -7861934959779167198
 
 footer:
-  image: /assets/img/logos/gsa-logo-dark.jpg
+  image: /assets/img/logos/18F-Logo-M.png 
   email:
   twitter:
     - 18f
+    - usgsa
   text: This site was built using <a href="https://federalist.18f.gov/" target="_blank">Federalist, from 18F</a>. # Change to a tag line for your agency
 
 # Build settings
