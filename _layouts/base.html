@@ -1,10 +1,17 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
   {% include head.html %}
 
-  <body>
-  	<p>Hello, world!</p>
+  <body class="{{ page.title | slugify }}">
+
+    {% include header.html %}
+
+    <div class="usa-grid">
+      {{ content }}
+    </div>
+
+    <!-- {% include footer.html %} -->
 
   </body>
 </html>
