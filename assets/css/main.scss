@@ -13,12 +13,71 @@
 // Custom styles
 // ==========================
 
+.usa-disclaimer-official {
+  display: block;
+}
+
 header[role=banner] {
   ul {
     @include unstyled-list;
+
+    li {
+      display: inline-block;
+
+      a {
+        font-weight: $font-bold;
+        padding: 20px;
+        text-decoration: none;
+      }
+    }
   }
 
-  li {
-    display: inline-block;
+  nav[role=navigation] {
+    float: right;
+    margin-top: 20px;
   }
+}
+
+.site-logo {
+  @include margin(1rem null);
+  width: 5.2rem;
+}
+
+// scss-lint:disable PropertyCount
+.menu-btn {
+  background-color: $color-primary;
+  color: $color-white;
+  display: inline;
+  float: right;
+  font-size: $h6-font-size;
+  line-height: 4rem;
+  height: 4rem;
+  width: 5.8rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include media($medium-screen) {
+    display: none;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary-darker;
+  }
+
+  &:visited {
+    color: $color-white;
+  }
+}
+// scss-lint:enable PropertyCount
+
+.hero {
+  @include padding(4rem null);
+  background-image: url('/assets/img/home/18f-hero.jpg');
+  background-size: cover;
+}
+
+.hero-callout {
+  max-width: 300px;
 }
