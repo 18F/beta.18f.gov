@@ -12,29 +12,13 @@
       <img src="{{ site.baseurl }}/assets/img/logos/18f-logo.svg" alt="18F"
       {% if page.url == '/' %}
         aria-hidden="true"
-      {% endif %}>
-      {% if page.url == '/' %}
-    </a>
-    <h1 class="usa-sr-only">18F</h1>
+      {% endif %}
+      ></a>
+    {% if page.url == '/' %}
+      <h1 class="usa-sr-only">18F</h1>
     {% endif %}
     <nav role="navigation">
-      <ul>
-        <li>
-          <a href="#">What we deliver</a>
-        </li>
-        <li>
-          <a href="#">How we work</a>
-        </li>
-        <li>
-          <a href="#">Hire 18F</a>
-        </li>
-        <li>
-          <a href="#">Join 18F</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-      </ul>
+      {% include navigation.html %}
     </nav>
   </div>
 </header>

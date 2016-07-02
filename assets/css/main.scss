@@ -15,7 +15,8 @@
 // ==========================
 
 $section-margins: 6rem;
-
+$nav-width-extra: 188px; // width needed to add so nav doesn't break on medium-screen size
+$border-accent:   1rem solid $color-bright;
 
 // Typography
 // ==========================
@@ -39,6 +40,38 @@ a {
 
   &:hover {
     color: $color-dark;
+  }
+}
+
+// TODO: fix variables issues
+// ==========================
+
+// *TODO*: Fix this so we don't have to re-call these when there are new variables
+h1 {
+  @include h1();
+}
+
+h2 {
+  @include h2();
+}
+
+h3 {
+  @include h3();
+}
+
+// h4 is the same
+
+h5 {
+  @include h5();
+}
+
+h6 {
+  @include h6();
+}
+
+.usa-sidenav-list  {
+  a {
+    font-family: $font-sans;
   }
 }
 
@@ -74,6 +107,7 @@ header[role=banner] {
   ul {
     @include unstyled-list;
 
+    // *TODO*: De-nest this once we fix lists in WDS
     li {
       display: inline-block;
 
@@ -86,14 +120,24 @@ header[role=banner] {
         &:hover {
           color: $color-black;
         }
+
+        &.usa-current {
+          border-bottom: $border-accent;
+          padding-bottom: 1.4rem;
+        }
       }
     }
   }
 
   nav[role=navigation] {
-    @include margin(23px null);
+    @include margin(2.15rem null);
+    display: none;
     float: right;
     font-size: $small-font-size;
+
+    @include media($medium-screen + $nav-width-extra) {
+      display: block;
+    }
   }
 }
 
@@ -117,12 +161,12 @@ header[role=banner] {
   font-size: $h6-font-size;
   line-height: 4rem;
   height: 4rem;
+  margin-top: 1.2rem;
   width: 5.8rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
 
-  @include media($medium-screen) {
+  @include media($medium-screen + $nav-width-extra) {
     display: none;
   }
 
@@ -175,7 +219,7 @@ header[role=banner] {
 // ==========================
 
 // Remove top margins from first item and bottom margins from last item
-section,
+.usa-section,
 .usa-grid,
 .usa-width-one-whole,
 .usa-width-one-half,
@@ -186,16 +230,24 @@ section,
 .usa-width-one-sixth,
 .usa-width-five-sixths,
 .usa-width-one-twelfth {
-  > *:first-child {
-    margin-top: 0;
-  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
 
-  > *:last-child:not(:only-child) {
-    margin-bottom: 0;
+    &:last-child:not(:only-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
-section {
+.usa-section {
   @include padding($section-margins null);
 }
 
@@ -226,7 +278,7 @@ section {
 // ==========================
 .posts {
   article {
-    border-top: 1rem solid $color-bright;
+    border-top: $border-accent;
     margin-bottom: $site-margins;
     padding-top: $site-margins;
 
@@ -311,3 +363,89 @@ footer[role=contentinfo] {
     width: 4.4rem;
   }
 }
+
+// Mobile sidenav
+// ==========================
+
+.sidenav-mobile {
+  $sliding-panel-width: 26rem;
+  @include padding (2rem);
+  @include position(fixed, 0 0 0 auto);
+  @include size($sliding-panel-width 100%);
+  @include transform(translateX($sliding-panel-width));
+  background: $color-white;
+  border-left: 1px solid $color-gray-light;
+  border-right: 0;
+  display: block;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 999999;
+
+  @include media($medium-screen + $nav-width-extra) {
+    display: none;
+  }
+
+  &.is-visible {
+    @include transform(translateX(0));
+    @include transition(all 0.3s ease-in-out);
+  }
+
+  nav {
+    margin-top: 6rem;
+  }
+
+  .usa-sidenav-list {
+    ul {
+      @include unstyled-list;
+    }
+
+    li {
+      border-top-color: $color-gray-lighter;
+    }
+
+    a {
+      @include padding(1rem null 1rem 3rem);
+      color: $color-gray;
+      font-weight: $font-bold;
+      font-size: $h5-font-size;
+
+      &:hover {
+        color: $color-dark;
+      }
+
+      &.usa-current {
+        border-left: $border-accent;
+        color: $color-dark;
+        padding-left: 2rem;
+      }
+    }
+  }
+}
+
+.sliding-panel-close {
+  float: right;
+  height: $hit-area;
+  margin-right: -1.5rem;
+  text-align: center;
+  width: $hit-area;
+
+  img {
+    margin-top: 1.6rem;
+    width: 1.3rem;
+  }
+}
+
+.overlay {
+  @include position(fixed, 0);
+  background: $color-black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 9999;
+
+  &.is-visible {
+    opacity: 0.1;
+    visibility: visible;
+  }
+}
+

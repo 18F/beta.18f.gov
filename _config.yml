@@ -8,26 +8,6 @@ url: "https://beta.18f.gov" # the base hostname & protocol for your site
 logo: /assets/img/logos/18F-Logo-Bright-S.png
 feature_image: /assets/img/feature-background.jpg
 
-colors:
-  background: '#ffffff'
-  button:
-    background: '#0071bc'
-    hover: '#3e94cf'
-    text: '#fff'
-  headers: '#205493'
-  text: '#212121'
-  projects:
-    accent: '#02bfe7'
-  banner:
-    background: '#112e51'
-    text: '#fff'
-    button:
-      background: '#dce4ef'
-      text: '#112e51'
-  footer:
-    background: '#323a45'
-    text: '#fff'
-
 analytics:
   google:
     code: '' # Change this to your GSA analytics code
@@ -82,7 +62,7 @@ forms:
       value: -7861934959779167198
 
 footer:
-  image: /assets/img/logos/18F-Logo-M.png 
+  image: /assets/img/logos/18F-Logo-M.png
   email:
   twitter:
     - 18f
@@ -111,4 +91,3 @@ jekyll-archives:
   layout: tag_index
   permalinks:
     tag: '/tags/:name/'
-
