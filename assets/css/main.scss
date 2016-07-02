@@ -4,8 +4,21 @@
 
 @charset "utf-8";
 
-// USWDS ------- //
+// USWDS
+// ==========================
 
 @import "_libs/wds/stylesheets/all";
 
-// Custom styles ----//
+
+// Custom styles
+// ==========================
+
+header[role=banner] {
+  ul {
+    @include unstyled-list;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
