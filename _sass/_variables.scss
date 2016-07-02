@@ -1,10 +1,15 @@
 // Typography
+$h1-font-size:        rem(36px);
+$h2-font-size:        rem(32px);
+$h3-font-size:        rem(24px);
 
-$font-sans:       'Nimbus Sans','Helvetica', 'Arial', sans-serif;
+$font-sans:           'Nimbus Sans','Helvetica', 'Arial', sans-serif;
 
 // Color
+$color-light:     #b3efff; // $color-light / $color-secondary-light
+$color-bright:    #00cfff; // $color-bright / $color-secondary
+$color-medium:    #046b99; // $color-medium / $color-primary
+$color-dark:      #1C304A; // $color-dark / $color-primary-dark
 
-$color-light:     #b3efff; // $color-secondary-light
-$color-bright:    #00cfff; // $color-secondary
-$color-medium:    #046b99; // $color-primary
-$color-dark:      #1C304A; // $color-primary-dark
+$color-base:      #1A1818;
+$color-base-alt:  #1F2E4A;

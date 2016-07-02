@@ -8,13 +8,21 @@
 // ==========================
 
 @import "_libs/wds/stylesheets/all";
+@import "variables";
 
 
-// Custom styles
+// Variables
 // ==========================
+
+$section-margins: 6rem;
+
 
 // Typography
 // ==========================
+
+body {
+  font-family: $font-sans;
+}
 
 h1,
 h2,
@@ -22,10 +30,40 @@ h3,
 h4,
 h5,
 h6 {
+  color: $color-base-alt;
   font-family: $font-sans;
 }
 
-// Site header
+a {
+  color: $color-medium;
+
+  &:hover {
+    color: $color-dark;
+  }
+}
+
+// Buttons
+.usa-button,
+.usa-button:visited {
+  background-color: $color-medium;
+  font-family: $font-sans;
+
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  &.usa-button-secondary,
+  &.usa-button-secondary:visited {
+    background-color: $color-bright;
+    color: $color-black;
+
+    &:hover {
+      background-color: $color-light;
+    }
+  }
+}
+
+// Header
 // ==========================
 
 .usa-disclaimer-official {
@@ -55,6 +93,7 @@ header[role=banner] {
   nav[role=navigation] {
     @include margin(23px null);
     float: right;
+    font-size: $small-font-size;
   }
 }
 
@@ -97,11 +136,129 @@ header[role=banner] {
 // ==========================
 
 .hero {
-  @include padding(4rem null);
-  background-image: url('/assets/img/home/18f-hero.jpg');
+  @include padding($site-margins null);
+  background-image: url('/assets/img/home/hero-every-kid.png');
+  background-position: center;
   background-size: cover;
 }
 
 .hero-callout {
-  max-width: 300px;
+  background-color: $color-dark;
+  padding: 3rem;
+
+  @include media($small-screen) {
+    max-width: 300px;
+  }
+
+  > *:first-child {
+    @include margin(0 null $site-margins null);
+  }
+
+  .usa-button {
+    font-size: $small-font-size;
+    margin-top: 7rem;
+    width: 100%;
+  }
+}
+
+.hero-callout-alt_color {
+  color: $color-bright;
+  display: block;
+}
+
+// Layout
+// ==========================
+
+// Remove top margins from first item
+section,
+.usa-grid,
+.usa-width-one-whole,
+.usa-width-one-half,
+.usa-width-one-third,
+.usa-width-two-thirds,
+.usa-width-one-fourth,
+.usa-width-three-fourths,
+.usa-width-one-sixth,
+.usa-width-five-sixths,
+.usa-width-one-twelfth {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+section {
+  @include padding($section-margins null);
+}
+
+.background-dark {
+  background-color: $color-dark;
+  color: $color-white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: $color-white;
+  }
+
+  a {
+    color: $color-bright;
+
+    &:hover {
+      color: $color-light;
+    }
+  }
+}
+
+// Post feature
+// ==========================
+.posts {
+  article {
+    border-top: 1rem solid $color-bright;
+    margin-bottom: $site-margins;
+    padding-top: $site-margins;
+
+    @include media($medium-screen) {
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:first-child {
+        color: $color-black;
+      }
+
+      &:last-child {
+        font-size: $small-font-size;
+        font-weight: $font-bold;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.post-date {
+  color: $color-gray;
+  font-size: 1.2rem;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+
+// Footer
+// ==========================
+
+footer[role=contentinfo] {
+  @include padding($site-margins null);
+  background-color: $color-gray-lightest;
 }
