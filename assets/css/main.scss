@@ -80,7 +80,7 @@ header[role=banner] {
       a {
         color: $color-gray;
         font-weight: $font-bold;
-        padding: 25px 20px;
+        padding: 2.3rem 2rem;
         text-decoration: none;
 
         &:hover {
@@ -98,14 +98,19 @@ header[role=banner] {
 }
 
 .site-logo {
-  @include margin(1rem null);
-  float: left;
-  width: 5.2rem;
+  display: block;
+
+  img {
+    @include margin(1rem null);
+    float: left;
+    width: 4.4rem;
+  }
 }
 
 // scss-lint:disable PropertyCount
 .menu-btn {
-  background-color: $color-primary;
+  background-color: $color-medium;
+  border-radius: $border-radius;
   color: $color-white;
   display: inline;
   float: right;
@@ -123,7 +128,7 @@ header[role=banner] {
 
   &:hover {
     color: $color-white;
-    background-color: $color-primary-darker;
+    background-color: $color-dark;
   }
 
   &:visited {
@@ -169,7 +174,7 @@ header[role=banner] {
 // Layout
 // ==========================
 
-// Remove top margins from first item
+// Remove top margins from first item and bottom margins from last item
 section,
 .usa-grid,
 .usa-width-one-whole,
@@ -185,7 +190,7 @@ section,
     margin-top: 0;
   }
 
-  > *:last-child {
+  > *:last-child:not(:only-child) {
     margin-bottom: 0;
   }
 }
@@ -261,4 +266,48 @@ section {
 footer[role=contentinfo] {
   @include padding($site-margins null);
   background-color: $color-gray-lightest;
+  font-size: $tiny-font-size;
+
+  ul {
+    @include unstyled-list;
+  }
+
+  li {
+    font-weight: $font-bold;
+    line-height: 2.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer-links {
+  margin-top: 1em;
+
+  @include media($medium-screen) {
+    margin-top: 0;
+
+    @include span-columns(2);
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-links-heading {
+  font-size: $tiny-font-size;
+  font-weight: $font-normal;
+  margin: 0;
+}
+
+.footer-logo {
+  &:first-child {
+    margin-right: 0.7rem;
+  }
+
+  img {
+    width: 4.4rem;
+  }
 }
