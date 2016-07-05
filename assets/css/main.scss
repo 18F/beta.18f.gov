@@ -23,6 +23,7 @@ $border-accent:   1rem solid $color-bright;
 
 body {
   font-family: $font-sans;
+  overflow-x: hidden;
 }
 
 h1,
@@ -40,6 +41,10 @@ a {
 
   &:hover {
     color: $color-dark;
+  }
+
+  &:visited {
+//    color: $color-medium;
   }
 }
 
@@ -274,6 +279,15 @@ header[role=banner] {
   }
 }
 
+// What we deliver section
+// ==========================
+
+.section-deliver {
+  a {
+    font-size: $h5-font-size;
+  }
+}
+
 // Post feature
 // ==========================
 .posts {
@@ -309,6 +323,7 @@ header[role=banner] {
   color: $color-gray;
   font-size: 1.2rem;
   font-weight: $font-bold;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -332,6 +347,59 @@ footer[role=contentinfo] {
   a {
     text-decoration: none;
   }
+
+  .usa-sidenav-list {
+    @include unstyled-list;
+
+    > li {
+      border-top-color: $color-gray-lighter;
+      color: $color-medium;
+    }
+
+    a {
+      color: $color-medium;
+      font-size: $h6-font-size;
+
+      &:hover {
+        background-color: $color-gray-lighter;
+      }
+    }
+  }
+
+  button {
+    font-size: $h6-font-size;
+    font-style: $font-sans;
+    font-weight: $font-normal;
+    text-align: left;
+  }
+
+  .usa-accordion-content {
+    background-color: $color-gray-lightest;
+
+    li {
+      border-top: 1px solid $color-gray-lighter;
+    }
+  }
+}
+
+.footer-mobile {
+  @include media($medium-screen) {
+    display: none;
+  }
+}
+
+.footer-desktop {
+  display: none;
+
+  @include media($medium-screen) {
+    display: block;
+  }
+}
+
+.footer-logo-links {
+  @include media($medium-screen) {
+    @include span-columns(6);
+  }
 }
 
 .footer-links {
@@ -341,10 +409,6 @@ footer[role=contentinfo] {
     margin-top: 0;
 
     @include span-columns(2);
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
   }
 }
 
