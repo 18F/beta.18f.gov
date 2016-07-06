@@ -10,11 +10,15 @@ $tiny-font-size:  rem(12px);
 $font-sans:       'Nimbus Sans','Helvetica', 'Arial', sans-serif;
 
 // Color
-$color-light:     #b3efff; // $color-light / $color-secondary-light
-$color-bright:    #00cfff; // $color-bright / $color-secondary
-$color-medium:    #046b99; // $color-medium / $color-primary
-$color-dark:      #1C304A; // $color-dark / $color-primary-dark
-$color-base:      #1F2E4A;
+$color-light:        #b3efff; // $color-light / $color-secondary-light
+$color-bright:       #00cfff; // $color-bright / $color-secondary
+$color-medium:       #046b99; // $color-medium / $color-primary
+$color-dark:         #1C304A; // $color-dark / $color-primary-dark
+$color-base:         #1F2E4A;
+
+$color-bright-hover: #00A7CE;
+$color-medium-hover: #00547A;
+
 
 // Spacing
 $section-margins: 6rem;
