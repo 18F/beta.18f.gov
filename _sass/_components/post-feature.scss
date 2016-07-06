@@ -1,0 +1,38 @@
+// Post feature
+// ==========================
+.posts {
+  article {
+    border-top: $border-accent;
+    margin-bottom: $site-margins;
+    padding-top: $site-margins;
+
+    @include media($medium-screen) {
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:first-child {
+        color: $color-black;
+      }
+
+      &:last-child {
+        font-size: $small-font-size;
+        font-weight: $font-bold;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.post-date {
+  color: $color-gray;
+  font-size: 1.2rem;
+  font-weight: $font-bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}

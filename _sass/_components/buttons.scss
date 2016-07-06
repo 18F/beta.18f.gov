@@ -1,0 +1,22 @@
+// Buttons
+// ==========================
+
+.usa-button,
+.usa-button:visited {
+  background-color: $color-medium;
+  font-family: $font-sans;
+
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  &.usa-button-secondary,
+  &.usa-button-secondary:visited {
+    background-color: $color-bright;
+    color: $color-black;
+
+    &:hover {
+      background-color: $color-light;
+    }
+  }
+}

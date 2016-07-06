@@ -17,3 +17,10 @@ $color-dark:      #1C304A; // $color-dark / $color-primary-dark
 
 $color-base:      #1A1818;
 $color-base-alt:  #1F2E4A;
+
+// Spacing
+$section-margins: 6rem;
+$nav-width-extra: 188px; // width needed to add so nav doesn't break on medium-screen size
+
+// Miscellaneous
+$border-accent:   1rem solid $color-bright;
