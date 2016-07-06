@@ -346,6 +346,14 @@ footer[role=contentinfo] {
 
   a {
     text-decoration: none;
+
+    &:visited {
+      color: $color-medium;
+    }
+
+    &:hover {
+      color: $color-dark;
+    }
   }
 
   .usa-sidenav-list {
