@@ -3,6 +3,58 @@
 
 .section-deliver {
   a {
+    display: inline-block;
+    margin-top: 5rem;
     font-size: $h5-font-size;
   }
+
+  p {
+    font-size: $h5-font-size;
+  }
+}
+
+.section-deliver-cta {
+  clear: both;
+}
+
+.section-deliver-icon {
+  float: left;
+  margin-top: 2rem;
+  min-height: 13rem;
+  padding-right: 2rem;
+  width: 50%;
+
+  &:nth-child(2) {
+    padding-right: 0;
+  }
+
+  @include media($medium-screen) {
+    padding-right: 2rem;
+    width: 20%;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:nth-child(2) {
+      padding-right: 2rem;
+    }
+  }
+
+  @include media($large-screen) {
+    padding-right: 7rem;
+
+    &:nth-child(2) {
+      padding-right: 7rem;
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+}
+
+.section-deliver-icon-img {
+  min-height: 6.8rem;
+  text-align: center;
 }
