@@ -4,8 +4,27 @@
 
 @charset "utf-8";
 
-// USWDS ------- //
+// USWDS
+// ==========================
 
 @import "_libs/wds/stylesheets/all";
 
-// Custom styles ----//
+
+// 18F site components
+// ==========================
+
+@import "_components/variables"; // TODO: fix this so variables work properly
+@import "_components/typography";
+@import "_components/buttons";
+@import "_components/header";
+@import "_components/hero";
+@import "_components/layout";
+@import "_components/post-feature";
+@import "_components/nav-mobile";
+@import "_components/footer";
+
+
+// 18F site templates
+// ==========================
+
+@import "_templates/home";

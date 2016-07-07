@@ -1,38 +1,25 @@
-<div class="skip-nav">
-  <a href="#main" class="skips">Skip to main content</a>
-</div>
-
-<header class="usa-site-header" role="banner">
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<header role="banner">
   <div class="usa-disclaimer">
-    <div class="usa-grid">
-      <span class="usa-disclaimer-official">An official website of the United States Government
-        <img alt="US flag signifying that this is a United States Federal Government website" src="{{ '/assets/img/us_flag_small.png' | prepend: site.baseurl }}">
-      </span>
-      <!-- <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span> -->
+    <div class="usa-disclaimer-official usa-grid">
+      <img src="{{ site.baseurl }}/assets/img/global/usa-flag.png" alt="U.S. flag">
+      <p>An official website of the United States Government</p>
     </div>
   </div>
-  <nav class="usa-site-navbar">
-    <div class="usa-grid">
-      <div id="logo">
-        <a href="{{ site.baseurl }}/" accesskey="1" title="Home" aria-label="Home">
-          {% if site.logo %}
-            <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-          {% else %}
-            <h1 class="usa-header-title">{{ site.title }}</h1>
-          {% endif %}
-        </a>
-      </div>
-      <ul class="usa-nav-list usa-unstyled-list">
-        {% assign navs = site.data.navbar.assigned %}
-
-        {% for nav in navs %}
-          {% if nav.show_in_menu %}
-          <li class="usa-menu-item">
-            <a href="{{ nav.permalink | prepend: site.baseurl }}">{{ nav.text }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+  <div class="site-navbar usa-grid">
+    <a class="menu-btn" href="#">Menu</a>
+    <a class="site-logo media_link" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/img/logos/18f-logo.svg" alt="18F"
+      {% if page.url == '/' %}
+        aria-hidden="true"
+      {% endif %}
+      ></a>
+    {% if page.url == '/' %}
+      <h1 class="usa-sr-only">Eighteen F: Digital services delivery</h1>
+    {% endif %}
+    <nav role="navigation">
+      {% include navigation.html %}
+    </nav>
+  </div>
 </header>
+<div class="overlay"></div>

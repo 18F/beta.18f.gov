@@ -1,0 +1,28 @@
+// Typography
+$h1-font-size:       rem(36px);
+$h2-font-size:       rem(32px);
+$h3-font-size:       rem(24px);
+$h5-font-size:       rem(14px);
+$h6-font-size:       rem(12px);
+
+$tiny-font-size:     rem(12px);
+
+$font-sans:          'Nimbus Sans','Helvetica', 'Arial', sans-serif;
+
+// Color
+$color-light:        #b3efff; // $color-light / $color-secondary-light
+$color-bright:       #00cfff; // $color-bright / $color-secondary
+$color-medium:       #046b99; // $color-medium / $color-primary
+$color-dark:         #1C304A; // $color-dark / $color-primary-dark
+$color-base:         #1F2E4A;
+
+$color-bright-hover: #00A7CE;
+$color-medium-hover: #00547A;
+
+
+// Spacing
+$section-margins:    6rem;
+$nav-width-extra:    88px; // width needed to add so nav doesn't break on medium-screen size
+
+// Miscellaneous
+$border-accent:      1rem solid $color-bright;

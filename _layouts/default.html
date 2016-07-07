@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="page-{{ page.title | slugify }}">
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include nav-mobile.html %}
+    {% include footer/mobile.html %}
+    {% include footer/desktop.html %}
+    {% include javascript.html %}
+
+  </body>
+</html>

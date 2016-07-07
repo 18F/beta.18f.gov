@@ -1,0 +1,67 @@
+// What we deliver section
+// ==========================
+
+.section-deliver {
+  a {
+    @include link-arrow-right(bright/arrow-right);
+    display: inline-block;
+    margin-top: 5rem;
+    font-size: $h5-font-size;
+  }
+
+  p {
+    font-size: $h5-font-size;
+  }
+}
+
+.section-deliver-icons {
+  margin-top: 4.6rem;
+}
+
+.section-deliver-icon {
+  float: left;
+  margin-top: 3rem;
+  min-height: 13rem;
+  padding-right: $site-margins;
+  width: 50%;
+
+  &:nth-child(even) {
+    padding-right: 0;
+  }
+
+  @include media($medium-screen) {
+    $icon-padding: 6%;
+    padding-right: $icon-padding;
+    width: 20%;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:nth-child(even) {
+      padding-right: $icon-padding;
+    }
+  }
+
+  p {
+    font-weight: $font-bold;
+    margin-top: 2rem;
+  }
+}
+
+.section-deliver-icon-img {
+  min-height: 6.8rem;
+  text-align: center;
+}
+
+.section-deliver-icon-government {
+  margin-top: -2px;
+}
+
+.section-deliver-icon-path {
+  margin-top: 8px;
+}
+
+.section-deliver-cta {
+  clear: both;
+}
