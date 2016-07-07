@@ -1,7 +1,7 @@
 // Mobile sidenav
 // ==========================
 
-.sidenav-mobile {
+.nav-mobile {
   $sliding-panel-width: 26rem;
   @include padding (2rem);
   @include position(fixed, 0 0 0 auto);
