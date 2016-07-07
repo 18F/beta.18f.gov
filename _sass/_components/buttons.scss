@@ -23,6 +23,8 @@
 
 
 @mixin link-arrow-right($link-arrow) {
+  font-weight: $font-bold;
+
   &:after {
     background-image: url(../img/arrows/#{$link-arrow}.png);
     background-image: url(../img/arrows/#{$link-arrow}.svg);
@@ -42,6 +44,8 @@
 }
 
 @mixin link-arrow-left($link-arrow) {
+  font-weight: $font-bold;
+
   &:before {
     background-image: url(../img/arrows/#{$link-arrow}.png);
     background-image: url(../img/arrows/#{$link-arrow}.svg);
