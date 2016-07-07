@@ -24,11 +24,9 @@
     @include transition(all 0.3s ease-in-out);
   }
 
-  nav {
-    margin-top: 6rem;
-  }
-
   .usa-sidenav-list {
+    margin-top: 6rem;
+
     ul {
       @include unstyled-list;
     }

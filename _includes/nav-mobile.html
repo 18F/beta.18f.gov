@@ -1,12 +1,10 @@
 {% assign current = page.url | downcase | split: '/' %}
 
-<aside class="nav-mobile">
+<nav role="navigation" class="nav-mobile">
   <a class="sliding-panel-close" href="#">
     <img src="{{ site.baseurl }}/assets/img/global/close.svg" alt="close">
   </a>
-  <nav role="navigation">
-    <ul class="usa-sidenav-list">
-      {% include navigation.html %}
-    </ul>
-  </nav>
-</aside>
+  <ul class="usa-sidenav-list">
+    {% include navigation.html %}
+  </ul>
+</nav>
