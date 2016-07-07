@@ -20,3 +20,54 @@
     }
   }
 }
+
+
+@mixin link-arrow-right($link-arrow) {
+  &:after {
+    background-image: url(../img/arrows/#{$link-arrow}.png);
+    background-image: url(../img/arrows/#{$link-arrow}.svg);
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: 1.2rem;
+    margin-bottom: -2px;
+    margin-left: 4px;
+    width: 1.2rem;
+  }
+
+  &:hover::after {
+    background-image: url(../img/arrows/#{$link-arrow}-hover.png);
+    background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
+  }
+}
+
+@mixin link-arrow-left($link-arrow) {
+  &:before {
+    background-image: url(../img/arrows/#{$link-arrow}.png);
+    background-image: url(../img/arrows/#{$link-arrow}.svg);
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: 1.2rem;
+    margin-bottom: -2px;
+    margin-right: 4px;
+    width: 1.2rem;
+  }
+
+  &:hover::after {
+    background-image: url(../img/arrows/#{$link-arrow}-hover.png);
+    background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
+  }
+}
+
+.link-arrow-left {
+  @include link-arrow-left(medium/arrow-left);
+}
+
+.link-arrow-right {
+  @include link-arrow-right(medium/arrow-right);
+}
+
+.link-arrow-right-alt {
+  @include link-arrow-right(bright/arrow-right);
+}

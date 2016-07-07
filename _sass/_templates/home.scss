@@ -3,6 +3,7 @@
 
 .section-deliver {
   a {
+    @include link-arrow-right(bright/arrow-right);
     display: inline-block;
     margin-top: 5rem;
     font-size: $h5-font-size;
