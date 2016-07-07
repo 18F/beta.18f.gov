@@ -36,6 +36,7 @@ footer[role=contentinfo] {
     }
 
     a {
+      @include padding(1.25rem null);
       color: $color-medium;
       font-size: $h6-font-size;
 
@@ -47,6 +48,7 @@ footer[role=contentinfo] {
 
   .usa-accordion {
     button {
+      @include padding(1.4rem null);
       background-position: left 10rem center;
     }
   }
