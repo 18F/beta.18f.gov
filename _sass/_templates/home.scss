@@ -29,7 +29,8 @@
   }
 
   @include media($medium-screen) {
-    padding-right: 2rem;
+    $icon-padding: 4rem;
+    padding-right: $icon-padding;
     width: 20%;
 
     &:last-child {
@@ -37,15 +38,16 @@
     }
 
     &:nth-child(2) {
-      padding-right: 2rem;
+      padding-right: $icon-padding;
     }
   }
 
   @include media($large-screen) {
-    padding-right: 7rem;
+    $icon-padding: 6.5rem;
+    padding-right: $icon-padding;
 
     &:nth-child(2) {
-      padding-right: 7rem;
+      padding-right: $icon-padding;
     }
   }
 
