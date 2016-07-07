@@ -1,6 +1,6 @@
 ---
 permalink: /blog/
-layout: default
+layout: default-grid
 title: Testing font sizes
 ---
 
