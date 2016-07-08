@@ -1,6 +1,10 @@
 // Post feature
 // ==========================
-.posts {
+.posts_feature {
+  > ul {
+    @include unstyled-list;
+  }
+
   article {
     border-top: $border-accent;
     margin-bottom: $site-margins;
@@ -12,18 +16,14 @@
 
     a {
       text-decoration: none;
-
-      &:first-child {
-        color: $color-black;
-      }
-
-      &:last-child {
-        @include link-arrow-right(medium/arrow-right);
-      }
     }
 
-    h3 {
+    .posts_feature-heading {
       margin-top: 0;
+
+      a {
+        color: $color-base;
+      }
     }
   }
 }

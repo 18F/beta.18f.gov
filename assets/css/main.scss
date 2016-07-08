@@ -237,12 +237,10 @@
   border-top: $border-light;
   font-size: $h5-font-size;
   font-weight: $font-bold;
-  margin-bottom: $section-margins;
 }
 
 .post-pagination {
   @include widget-small;
-
 
   .usa-width-one-half {
     &:last-child {
@@ -283,6 +281,7 @@
 
 .social_bar {
   @include widget-small;
+  margin-bottom: $section-margins;
 
   h5 {
     display: inline-block;
@@ -305,5 +304,11 @@
 
   a {
     text-decoration: none;
+  }
+}
+
+.posts {
+  ul {
+    @include unstyled-list;
   }
 }
