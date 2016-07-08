@@ -50,7 +50,7 @@ post: yes
       {% if page.previous %}
         <a href="{{ site.baseurl }}{{ page.previous.url }}">
           <span class="post-pagination-previous">Previous Post</span>
-          <p>&ldquo;{{ page.previous.title }}&rdquo;</p>
+          <h5>&ldquo;{{ page.previous.title }}&rdquo;</h5>
         </a>
       {% endif %}
     </div>
@@ -58,9 +58,24 @@ post: yes
       {% if page.next %}
           <a href="{{ site.baseurl }}{{ page.next.url }}">
             <span class="post-pagination-next">Next Post</span>
-            <p>&ldquo;{{ page.next.title }}&rdquo;</p>
+            <h5>&ldquo;{{ page.next.title }}&rdquo;</h5>
           </a>
       {% endif %}
     </div>
   </section>
 {% endif %}
+
+<div class="social_bar usa-grid">
+  <h5>Follow the latest news from 18F</h5>
+  <ul>
+    <li>
+      <a href="#">@18F</a>
+    </li>
+    <li>
+      <a href="#">RSS feed</a>
+    </li>
+    <li>
+      <a href="#">Newsletter</a>
+    </li>
+  </ul>
+</div>
