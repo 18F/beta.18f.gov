@@ -6,10 +6,8 @@ title: Blog
 
 <section class="usa-section background-dark">
   <div class="usa-grid">
-    <div class="usa-width-two-thirds">
-      <h1 class="page-heading">{{ page.title }}</h1>
-    </div>
-    <div class="usa-width-one-third">
+    <h1 class="page-heading">{{ page.title }}</h1>
+    <div class="blog-search">
       <form class="usa-search usa-search-small">
         <div role="search">
           <label class="usa-sr-only" for="search-field-small">Search small</label>
@@ -24,20 +22,26 @@ title: Blog
   </div>
 </section>
 
-<div class="usa-grid">
+<div class="blog-content usa-grid">
 
-  <ul class="post-list">
+  <ul class="post-list usa-width-two-thirds">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         {{ post.excerpt }}
-        <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+        <p>
+          <a class="post-link-continue_reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+        </p>
       </li>
     {% endfor %}
   </ul>
-
+  <div class="usa-width-one-third">
+    {% if post.image != null %}
+      <img src="{{ site.baseurl }}/{{ post.image }}">
+    {% endif %}
+  </div>
 </div>

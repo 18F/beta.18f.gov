@@ -19,7 +19,6 @@
 
       &:last-child {
         @include link-arrow-right(medium/arrow-right);
-        font-size: $small-font-size;
       }
     }
 

@@ -23,6 +23,7 @@
 
 @mixin link-arrow-right($link-arrow) {
   font-weight: $font-bold;
+  font-size: $small-font-size;
   text-decoration: none;
 
   &:after {
