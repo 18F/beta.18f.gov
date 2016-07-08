@@ -24,24 +24,32 @@ title: Blog
 
 <div class="blog-content usa-grid">
 
-  <ul class="post-list usa-width-two-thirds">
+  <ul class="post-list">
+
     {% for post in site.posts %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ post.excerpt }}
-        <p>
-          <a class="post-link-continue_reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
-        </p>
+        <div class="usa-width-two-thirds">
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          {{ post.excerpt }}
+          <p>
+            <a class="post-link-continue_reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+          </p>
+          <span class="post-tags" itemprop="keywords">
+            {% for tag in post.tags %}
+              <a class="usa-label" href="{{ site.baseurl }}/{{ site.tag_dir }}/{{ tag | slugify }}/">{{ tag }}
+              </a>
+            {% endfor %}
+          </span>
+        </div>
+        <div class="usa-width-one-third">
+          {% if post.image != null %}
+            <img src="{{ site.baseurl }}{{ post.image }}">
+          {% endif %}
+        </div>
       </li>
     {% endfor %}
   </ul>
-  <div class="usa-width-one-third">
-    {% if post.image != null %}
-      <img src="{{ site.baseurl }}/{{ post.image }}">
-    {% endif %}
-  </div>
 </div>

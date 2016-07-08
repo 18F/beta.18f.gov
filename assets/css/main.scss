@@ -66,6 +66,31 @@
       text-decoration: none;
     }
   }
+
+  li {
+    border-bottom: 1px solid $color-gray-lightest;
+    display: inline-block;
+    margin-top: $section-margins;
+    padding-bottom: $section-margins;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .post-tags {
+    margin-top: 1em;
+  }
+
+  img {
+    margin-top: $site-margins;
+    max-height: 26rem;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-top: 0;
+    }
+  }
 }
 
 .blog-content {
