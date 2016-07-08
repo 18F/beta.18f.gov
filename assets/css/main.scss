@@ -80,10 +80,6 @@
 
   .post-tags {
     margin-top: 1em;
-
-    a {
-      display: inline-block;
-    }
   }
 
   img {
@@ -219,6 +215,7 @@
   a {
     @include padding(0.2rem null);
     background-color: $color-medium;
+    display: inline-block;
     font-size: $h6-font-size;
     font-weight: $font-bold;
     text-decoration: none;
