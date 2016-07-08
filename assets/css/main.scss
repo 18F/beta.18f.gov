@@ -44,7 +44,7 @@
   article {
     @include margin(0 null $section-margins null);
 
-    @include media($medium-screen + 20rem) {
+    @include media($medium-screen + 200px) {
       @include margin($section-margins auto);
       max-width: 61rem;
     }
@@ -57,7 +57,7 @@
   font-size: $h6-font-size;
   margin-top: $section-margins;
 
-  @include media($medium-screen + 20rem) {
+  @include media($medium-screen + 200px) {
     margin-top: 0.7rem;
     position: absolute;
   }
@@ -88,14 +88,13 @@
   a {
     @include padding(0.2rem null);
     background-color: $color-medium;
-    color: $color-white;
     font-size: $h6-font-size;
     font-weight: $font-bold;
     text-decoration: none;
     text-transform: lowercase;
 
     &:hover {
-      background-color: $color-dark;
+      background-color: $color-medium-hover;
     }
 
     &:hover,
