@@ -68,7 +68,7 @@
   }
 
   li {
-    border-bottom: 1px solid $color-gray-lightest;
+    border-bottom: $border-light;
     display: inline-block;
     margin-top: $section-margins;
     padding-bottom: $section-margins;
@@ -145,7 +145,7 @@
 // Blog post
 // ==========================
 
-.page-header_border {
+.single-post {
   header[role=banner] {
     border-bottom: 1px solid #cccccc; // See if we can use a WDS color
   }
@@ -231,8 +231,50 @@
   }
 }
 
+.post-pagination {
+  @include padding(2rem null);
+  border-bottom: $border-light;
+  border-top: $border-light;
+  font-size: $h5-font-size;
+  font-weight: $font-bold;
+  margin-bottom: $section-margins;
 
+  .usa-width-one-half {
+    &:last-child {
+      margin-top: 1em;
 
+      @include media($medium-screen) {
+        margin-top: 0;
+        text-align: right;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    span {
+      color: $color-medium;
+
+      &:hover {
+        color: $color-medium-hover;
+      }
+    }
+
+    p {
+      color: $color-base;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.post-pagination-previous {
+  @include link-arrow-left(medium/arrow-left);
+}
+
+.post-pagination-next {
+  @include link-arrow-right(medium/arrow-right);
+}
 
 
 
