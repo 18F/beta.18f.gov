@@ -213,11 +213,14 @@
 
 .post-tags {
   a {
-    @include padding(0.2rem null);
+    @include padding(0.6rem null);
     background-color: $color-medium;
     display: inline-block;
     font-size: $h6-font-size;
     font-weight: $font-bold;
+    line-height: 1;
+    margin-bottom: 4px;
+    margin-right: 0;
     text-decoration: none;
     text-transform: lowercase;
 
