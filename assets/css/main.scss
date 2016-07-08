@@ -143,6 +143,7 @@
 
     figure {
       @include margin($section-margins null);
+      text-align: center; // center image if less than full width
 
       img {
         @include margin(0 null);
