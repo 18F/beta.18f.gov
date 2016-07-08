@@ -27,7 +27,7 @@ post: yes
         {% endfor %}
         on
       {% endif %}
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
       </p>
       <span class="post-tags" itemprop="keywords">
         {% for tag in page.tags %}
