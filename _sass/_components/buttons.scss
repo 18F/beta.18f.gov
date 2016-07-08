@@ -33,7 +33,7 @@
     content: '';
     display: inline-block;
     height: 1.2rem;
-    margin-bottom: -2px;
+    margin-bottom: -1px;
     margin-left: 4px;
     width: 1.2rem;
   }
@@ -42,10 +42,19 @@
     background-image: url(../img/arrows/#{$link-arrow}-hover.png);
     background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
   }
+
+  &:visited {
+    color: $color-medium;
+
+    &:hover {
+      color: $color-medium-hover;
+    }
+  }
 }
 
 @mixin link-arrow-left($link-arrow) {
   font-weight: $font-bold;
+  font-size: $small-font-size;
   text-decoration: none;
 
   &:before {
@@ -55,7 +64,7 @@
     content: '';
     display: inline-block;
     height: 1.2rem;
-    margin-bottom: -2px;
+    margin-bottom: -1px;
     margin-right: 4px;
     width: 1.2rem;
   }
@@ -63,6 +72,14 @@
   &:hover::after {
     background-image: url(../img/arrows/#{$link-arrow}-hover.png);
     background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
+  }
+
+  &:visited {
+    color: $color-medium;
+
+    &:hover {
+      color: $color-medium-hover;
+    }
   }
 }
 

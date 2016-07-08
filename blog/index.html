@@ -1,5 +1,4 @@
 ---
-permalink: /blog/
 layout: default
 title: Blog
 ---
@@ -26,7 +25,7 @@ title: Blog
 
   <ul class="post-list">
 
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <div class="usa-width-two-thirds">
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -54,23 +53,27 @@ title: Blog
   </ul>
 </div>
 
-{% if page.previous or page.next %}
-    <section class="blog-pagination">
-      <div>
-        {% if page.previous %}
-          <a href="{{ site.baseurl }}{{ page.previous.url }}">
-            <h1><i class="fa fa-chevron-left"></i> Previous Post</h1>
-            <p>&ldquo;{{ page.previous.title }}&rdquo;</p>
-          </a>
-        {% endif %}
-      </div>
-      <div>
-        {% if page.next %}
-            <a href="{{ site.baseurl }}{{ page.next.url }}">
-              <h1>Next Post <i class="fa fa-chevron-right"></i></h1>
-              <p>&ldquo;{{ page.next.title }}&rdquo;</p>
-            </a>
-        {% endif %}
-      </div>
-    </section>
-{% endif %}
+<!-- Pagination links -->
+<section class="pagination usa-grid">
+  <div>
+    {% if paginator.previous_page %}
+      <a class="link-arrow-left" href="{{ site.baseurl }}{{ paginator.previous_page_path }}/">
+        Previous x posts
+      </a>
+    {% else %}
+    <p></p>
+    {% endif %}
+  </div>
+  <div>
+    <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+  </div>
+  <div>
+    {% if paginator.next_page %}
+    <a class="link-arrow-right" href="{{ site.baseurl }}{{ paginator.next_page_path }}/">
+      Next x posts
+    </a>
+    {% else %}
+    <p></p>
+    {% endif %}
+  </div>
+</section>

@@ -7,6 +7,14 @@
     display: inline-block;
     margin-top: 5rem;
     font-size: $h5-font-size;
+
+    &:visited {
+      color: $color-bright;
+
+      &:hover {
+        color: $color-bright-hover;
+      }
+    }
   }
 
   p {
