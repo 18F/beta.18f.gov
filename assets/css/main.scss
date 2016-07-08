@@ -38,7 +38,7 @@
 
 .page-header_border {
   header[role=banner] {
-    border-bottom: 1px solid $color-gray-light;
+    border-bottom: 1px solid #cccccc; // See if we can use a WDS color
   }
 
   article {
@@ -47,6 +47,22 @@
     @include media($medium-screen + 200px) {
       @include margin($section-margins auto);
       max-width: 61rem;
+    }
+
+    img {
+      @include margin($section-margins null);
+    }
+
+    figure {
+      @include margin($section-margins null);
+
+      img {
+        @include margin(0 null);
+      }
+    }
+
+    figcaption {
+      font-size: $h6-font-size;
     }
   }
 }
