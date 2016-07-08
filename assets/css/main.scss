@@ -36,19 +36,43 @@
 // Blog post
 // ==========================
 
-.page-post {
+.page-header_border {
   header[role=banner] {
     border-bottom: 1px solid $color-gray-light;
   }
 
   article {
-    @include margin($section-margins null);
+    @include margin(0 null $section-margins null);
 
-    @include media($medium-screen) {
-      @include margin(null auto);
+    @include media($medium-screen + 20rem) {
+      @include margin($section-margins auto);
       max-width: 61rem;
     }
   }
+}
+
+.back-blog {
+  @include link-arrow-left(medium/arrow-left);
+  display: inline-block;
+  font-size: $h6-font-size;
+  margin-top: $section-margins;
+
+  @include media($medium-screen + 20rem) {
+    margin-top: 0.7rem;
+    position: absolute;
+  }
+
+  &:hover {
+    color: $color-dark;
+  }
+
+  &:visited {
+    color: $color-medium;
+  }
+}
+
+.post-header {
+  margin-bottom: $section-margins;
 }
 
 .post-byline {
