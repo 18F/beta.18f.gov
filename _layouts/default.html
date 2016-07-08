@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body class="page-{{ page.title | slugify }}
-  {{ if header_border =! null }}page-header_border{{ endif }} {{ if post =! null }}single-post{{ endif }}">
+  {{ if page.header_border == yes }}page-header_border{{ endif }} {{ if page.post =! null }}single-post{{ endif }}">
 
     {% include header.html %}
 
