@@ -1,5 +1,5 @@
 ---
-permalink: /blog/
+permalink: /test/
 layout: default-grid
 title: Testing font sizes
 ---
