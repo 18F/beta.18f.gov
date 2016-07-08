@@ -15,9 +15,9 @@ analytics:
     agency: GSA    # Change this to your agency
     subagency: 18F # Change this to your agency
 
-#blog archive at /blog
+# blog archive at /blog
 paginate: 5
-paginate_path: "blog/page/:num/"
+paginate_path: "blog/page/:num"
 
 collections:
   team:

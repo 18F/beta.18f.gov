@@ -1,5 +1,5 @@
 ---
-permalink: /blog-index/
+permalink: /blog/
 layout: default
 title: Blog
 ---
@@ -53,3 +53,24 @@ title: Blog
     {% endfor %}
   </ul>
 </div>
+
+{% if page.previous or page.next %}
+    <section class="blog-pagination">
+      <div>
+        {% if page.previous %}
+          <a href="{{ site.baseurl }}{{ page.previous.url }}">
+            <h1><i class="fa fa-chevron-left"></i> Previous Post</h1>
+            <p>&ldquo;{{ page.previous.title }}&rdquo;</p>
+          </a>
+        {% endif %}
+      </div>
+      <div>
+        {% if page.next %}
+            <a href="{{ site.baseurl }}{{ page.next.url }}">
+              <h1>Next Post <i class="fa fa-chevron-right"></i></h1>
+              <p>&ldquo;{{ page.next.title }}&rdquo;</p>
+            </a>
+        {% endif %}
+      </div>
+    </section>
+{% endif %}
