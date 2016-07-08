@@ -32,6 +32,27 @@
 // Blog index
 // ==========================
 
+.link-rss {
+  float: right;
+  font-size: $h5-font-size;
+
+  &:before {
+    background-image: url(../img/global/rss.png);
+    background-image: url(../img/global/rss.svg);
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: $h6-font-size;
+    margin-bottom: -2px;
+    margin-right: 4px;
+    width: $h6-font-size;
+  }
+
+  &:hover::after {
+    background-image: url(../img/global/rss-hover.png);
+    background-image: url(../img/global/rss-hover.svg);
+  }
+}
 
 // Blog post
 // ==========================

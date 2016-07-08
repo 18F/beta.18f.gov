@@ -1,0 +1,43 @@
+---
+permalink: /blog-index/
+layout: default
+title: Blog
+---
+
+<section class="usa-section background-dark">
+  <div class="usa-grid">
+    <div class="usa-width-two-thirds">
+      <h1 class="page-heading">{{ page.title }}</h1>
+    </div>
+    <div class="usa-width-one-third">
+      <form class="usa-search usa-search-small">
+        <div role="search">
+          <label class="usa-sr-only" for="search-field-small">Search small</label>
+          <input id="search-field-small" type="search" name="search">
+          <button type="submit">
+            <span class="usa-sr-only">Search</span>
+          </button>
+        </div>
+      </form>
+    <p><a class="link-rss" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS feed</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="usa-grid">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {{ post.excerpt }}
+        <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
