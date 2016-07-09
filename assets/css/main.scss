@@ -148,6 +148,16 @@
 // Blog post
 // ==========================
 
+.post-feature_image {
+  background-position: center;
+  background-size: cover;
+  height: 36rem;
+
+  @include media($medium-screen) {
+    height: 40rem;
+  }
+}
+
 .single-post {
   header[role=banner] {
     border-bottom: 1px solid #cccccc; // See if we can use a WDS color
