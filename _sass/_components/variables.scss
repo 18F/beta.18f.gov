@@ -8,6 +8,8 @@ $h6-font-size:       rem(12px);
 $tiny-font-size:     rem(12px);
 
 $font-sans:          'Nimbus Sans','Helvetica', 'Arial', sans-serif;
+$font-monospace:     Consolas, Monaco, "Andale Mono", monospace;
+
 
 // Color
 $color-light:        #b3efff; // $color-light / $color-secondary-light
@@ -23,6 +25,7 @@ $color-medium-hover: #00547A;
 // Spacing
 $section-margins:    6rem;
 $nav-width-extra:    88px; // width needed to add so nav doesn't break on medium-screen size
+
 
 // Miscellaneous
 $border-accent:      1rem solid $color-bright;
