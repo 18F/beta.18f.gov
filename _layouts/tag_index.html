@@ -1,8 +1,10 @@
 ---
 layout: default
+header_border: true
 ---
 
 <section class="usa-grid usa-section">
+  <a class="back-blog" href="{{ site.baseurl }}/blog/">Blog</a>
   {% assign numberof = page.posts | size %}
   <h1>{{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %} tagged {{ page.title }}</h1>
 
