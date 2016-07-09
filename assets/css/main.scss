@@ -283,14 +283,11 @@
   }
 
   a {
+    color: $color-medium;
     text-decoration: none;
 
-    span {
-      color: $color-medium;
-
-      &:hover {
-        color: $color-medium-hover;
-      }
+    &:hover {
+      color: $color-medium-hover;
     }
 
     h5 {
