@@ -82,14 +82,17 @@
     margin-top: 1em;
   }
 
-  img {
+  .media_link {
     margin-top: $site-margins;
-    max-height: 26rem;
 
     @include media($medium-screen) {
       float: right;
       margin-top: 0;
     }
+  }
+
+  img {
+    max-height: 26rem;
   }
 }
 
