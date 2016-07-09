@@ -387,3 +387,18 @@ code {
     max-width: $lead-max-width;
   }
 }
+
+// Tag index
+// ==========================
+
+.page-tag-results {
+  .post-list {
+    li {
+      &:first-child {
+        border-top: $border-light;
+        padding-top: 6rem;
+      }
+    }
+  }
+}
+
