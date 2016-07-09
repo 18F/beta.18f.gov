@@ -5,13 +5,15 @@ post: yes
 ---
 
 {% if page.image != null %}
-  <style type="text/css">
-    .post-feature_image {
-      background-image: url('{{ site.baseurl }}{{ page.image }}');
-    }
-  </style>
+  {% unless page.image_hero == false %}
+    <style type="text/css">
+      .post-feature_image {
+        background-image: url('{{ site.baseurl }}{{ page.image }}');
+      }
+    </style>
 
-  <div class="post-feature_image"></div>
+    <div class="post-feature_image"></div>
+  {% endunless  %}
 {% endif %}
 
 <div class="usa-grid">
@@ -47,6 +49,10 @@ post: yes
     </header>
 
     <div class="post-content" itemprop="articleBody">
+      {% if page.image != null and page.image_feature_small == true %}
+        <img class="image-feature-small" src="{{ site.baseurl }}{{ page.image }}" alt="">
+      {% endif %}
+
       {{ content }}
     </div>
 

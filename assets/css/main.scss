@@ -171,6 +171,10 @@
       max-width: 61rem;
     }
 
+    .image-feature-small {
+      margin-top: 0;
+    }
+
     img {
       @include margin($section-margins null);
     }
