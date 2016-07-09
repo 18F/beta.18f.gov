@@ -4,10 +4,22 @@ header_border: yes
 post: yes
 ---
 
+{% if page.image != null %}
+  <style type="text/css">
+    .post-feature_image {
+      background-image: url('{{ site.baseurl }}{{ page.image }}');
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+    }
+  </style>
+
+  <div class="post-feature_image"></div>
+{% endif %}
+
 <div class="usa-grid">
 
   <a class="back-blog" href="{{ site.baseurl }}/blog/">Blog</a>
-
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
