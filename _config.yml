@@ -3,10 +3,10 @@ title: "18F: Digital service delivery"
 description: "A fresh start for 18f.gsa.gov"
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: pretty
-tags_dir: tags
 url: "https://beta.18f.gov" # the base hostname & protocol for your site
 logo: /assets/img/logos/18F-Logo-Bright-S.png
 feature_image: /assets/img/feature-background.jpg
+tag_dir: tags
 
 analytics:
   google:
@@ -18,6 +18,13 @@ analytics:
 # blog archive at /blog
 paginate: 5
 paginate_path: "blog/page/:num"
+
+jekyll-archives:
+  enabled:
+    - 'tags'
+  layout: tag_index
+  permalinks:
+    tag: '/tags/:name/'
 
 collections:
   team:
@@ -84,10 +91,3 @@ gems:
   - jekyll-archives
   - jekyll-redirect-from
   - jekyll-feed
-
-jekyll-archives:
-  enabled:
-    - 'tags'
-  layout: tag_index
-  permalinks:
-    tag: '/tags/:name/'
