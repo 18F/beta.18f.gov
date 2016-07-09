@@ -26,13 +26,13 @@ layout: default
         {% for author in page.authors %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a class="post-author" href="" itemprop="name">{{ author }}</a>
-          </span>
           {% assign authorCount = page.authors | size %}
           {% if authorCount > 1 %}
             {% unless forloop.last %}
-              <span>,</span>
+              <span class="post-author-comma">,</span>
             {% endunless %}
           {% endif %}
+          </span>
         {% endfor %}
         on
       {% endif %}

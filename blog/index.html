@@ -42,7 +42,7 @@ title: Blog
               {% assign authorCount = post.authors | size %}
               {% if authorCount > 1 %}
                 {% unless forloop.last %}
-                  <span>,</span>
+                  <span class="post-author-comma">,</span>
                 {% endunless %}
               {% endif %}
             {% endfor %}

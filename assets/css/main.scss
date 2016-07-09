@@ -242,6 +242,10 @@
   }
 }
 
+.post-author-comma {
+  margin-left: -3px;
+}
+
 .post-tags {
   a {
     @include padding(0.6rem null);
