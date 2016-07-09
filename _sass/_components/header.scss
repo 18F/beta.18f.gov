@@ -14,9 +14,10 @@ header[role=banner] {
       display: inline-block;
 
       a {
+        @include margin(null 2rem);
+        @include padding(2.3rem null);
         color: $color-gray;
         font-weight: $font-bold;
-        padding: 2.3rem 2rem;
         text-decoration: none;
 
         &:hover {
