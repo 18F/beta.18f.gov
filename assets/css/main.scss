@@ -284,7 +284,7 @@
 
   .usa-width-one-half {
     &:last-child {
-      margin-top: 1em;
+      margin-top: 1.5em;
 
       @include media($medium-screen) {
         margin-top: 0;
@@ -327,7 +327,12 @@
 
   ul {
     @include unstyled-list;
-    float: right;
+    margin-top: 1.5em;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-top: 0;
+    }
 
     li {
       display: inline;
