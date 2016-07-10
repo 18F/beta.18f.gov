@@ -94,3 +94,41 @@
 .link-arrow-right-alt {
   @include link-arrow-right(bright/arrow-right);
 }
+
+@mixin display-icon($icon, $direction, $size) {
+  &:#{$direction} {
+    background-image: url(../img/#{$icon}.png);
+    background-image: url(../img/#{$icon}.svg);
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: $size;
+    margin-bottom: -1px;
+    width: $size;
+
+    @if $direction == 'after' {
+      margin-left: 4px;
+    }
+
+      @else {
+        margin-right: 4px;
+      }
+    }
+
+  &:hover::#{$direction} {
+    background-image: url(../img/#{$icon}-hover.png);
+    background-image: url(../img/#{$icon}-hover.svg);
+  }
+}
+
+.social_icon-twitter {
+  @include display-icon(global/social-icons/twitter, before, 1.4rem);
+}
+
+.social_icon-rss {
+  @include display-icon(global/social-icons/rss, before, 1.4rem);
+}
+
+.social_icon-newsletter {
+  @include display-icon(global/social-icons/envelope, before, 1.4rem);
+}

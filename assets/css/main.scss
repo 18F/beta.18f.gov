@@ -339,7 +339,9 @@
   }
 
   a {
-    text-decoration: none;
+    &:before {
+      margin-right: 0.8rem;
+    }
   }
 }
 
