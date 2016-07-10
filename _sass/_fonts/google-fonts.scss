@@ -1,7 +1,7 @@
 @include font-face(
   'Nimbus Sans',
-  '../fonts/nimbus-sans-l_bold-webfont',
-  700,
+  '../fonts/nimbus-sans-l_regular-webfont',
+  400,
   normal,
   $file-formats: eot woff2 woff ttf
 );
@@ -16,8 +16,8 @@
 
 @include font-face(
   'Nimbus Sans',
-  '../fonts/nimbus-sans-l_regular-webfont',
-  400,
+  '../fonts/nimbus-sans-l_bold-webfont',
+  700,
   normal,
   $file-formats: eot woff2 woff ttf
 );
