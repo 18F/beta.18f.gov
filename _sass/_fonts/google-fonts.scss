@@ -1,0 +1,23 @@
+@include font-face(
+  'Nimbus Sans',
+  '../fonts/nimbus-sans-l_bold-webfont',
+  700,
+  normal,
+  $file-formats: eot woff2 woff ttf
+);
+
+@include font-face(
+  'Nimbus Sans',
+  '../fonts/nimbus-sans-l_italic-webfont',
+  400,
+  italic,
+  $file-formats: eot woff2 woff ttf
+);
+
+@include font-face(
+  'Nimbus Sans',
+  '../fonts/nimbus-sans-l_regular-webfont',
+  400,
+  normal,
+  $file-formats: eot woff2 woff ttf
+);
