@@ -1,0 +1,115 @@
+// Blog index
+// ==========================
+
+.link-rss {
+  float: right;
+  font-size: $h5-font-size;
+
+  &:before {
+    background-image: url(../img/global/rss.png);
+    background-image: url(../img/global/rss.svg);
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: $h6-font-size;
+    margin-bottom: -2px;
+    margin-right: 4px;
+    width: $h6-font-size;
+  }
+
+  &:hover::after {
+    background-image: url(../img/global/rss-hover.png);
+    background-image: url(../img/global/rss-hover.svg);
+  }
+}
+
+.post-list {
+  @include unstyled-list;
+
+  h2 {
+    font-size: $h3-font-size;
+    margin-top: 0.5em;
+
+    a {
+      color: $color-base;
+      text-decoration: none;
+    }
+  }
+
+  li {
+    border-bottom: $border-light;
+    display: inline-block;
+    margin-top: $section-margins;
+    padding-bottom: $section-margins;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .post-tags {
+    margin-top: 1em;
+  }
+
+  .media_link {
+    margin-top: $site-margins;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-top: 0;
+    }
+  }
+
+  img {
+    max-height: 26rem;
+  }
+}
+
+.blog-content {
+  margin-top: $section-margins;
+}
+
+.post-link-continue_reading {
+  @include link-arrow-right(medium/arrow-right);
+}
+
+.blog-search {
+  float: right;
+  width: 100%;
+
+  @include media($medium-screen) {
+    max-width: 29rem;
+  }
+}
+
+.page-blog {
+  .background-dark {
+    .page-heading {
+      @include media($medium-screen) {
+        display: initial;
+      }
+    }
+  }
+}
+
+.pagination {
+  color: $color-gray;
+  font-size: $h5-font-size;
+  margin-bottom: $section-margins;
+  margin-top: 2rem;
+
+  > div {
+    float: left;
+    width: 33%;
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:last-child {
+      a {
+        float: right;
+      }
+    }
+  }
+}
