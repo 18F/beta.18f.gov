@@ -19,8 +19,7 @@ layout: default
         By
         {% for author in page.authors %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <a class="post-author" href="" itemprop="name">{{ author |
-lookup:"authors,full_name"}}</a>
+            <a class="post-author" href="" itemprop="name">{{ author | lookup:"authors,full_name"}}</a>
           {% assign authorCount = page.authors | size %}
           {% if authorCount > 1 %}
             {% unless forloop.last %}
