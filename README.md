@@ -2,6 +2,16 @@
 
 A fresh start for 18f.gsa.gov. Online at beta.18f.gov. We plan to use the U.S. Web Design standards as a frontend framework.
 
+## Installation
+
+Copy and paste each of the following steps to get the site up and running.
+
+1. `git clone git@github.com:18F/beta.18f.gov`
+2. `cd beta.18f.gov`
+3. `jekyll serve`
+
+You should be able to see the site at: http://127.0.0.1:4000
+
 ## System security controls
 
 The site is a static website with HTML, CSS, and Javascript. Deployments are done through the Federalist platform.
