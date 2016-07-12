@@ -187,6 +187,14 @@
     &:before {
       margin-right: 0.8rem;
     }
+
+    &:visited {
+      color: $color-medium;
+    }
+
+    &:hover {
+      color: $color-medium-hover;
+    }
   }
 }
 
