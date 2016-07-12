@@ -21,78 +21,10 @@
   }
 }
 
-@mixin link-arrow-right($link-arrow) {
+%link-arrow {
   font-weight: $font-bold;
   font-size: $small-font-size;
   text-decoration: none;
-
-  &:after {
-    background-image: url(../img/arrows/#{$link-arrow}.png);
-    background-image: url(../img/arrows/#{$link-arrow}.svg);
-    background-size: 100%;
-    content: '';
-    display: inline-block;
-    height: 1.2rem;
-    margin-bottom: -1px;
-    margin-left: 4px;
-    width: 1.2rem;
-  }
-
-  &:hover::after {
-    background-image: url(../img/arrows/#{$link-arrow}-hover.png);
-    background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
-  }
-
-  &:visited {
-    color: $color-medium;
-
-    &:hover {
-      color: $color-medium-hover;
-    }
-  }
-}
-
-@mixin link-arrow-left($link-arrow) {
-  font-weight: $font-bold;
-  font-size: $small-font-size;
-  text-decoration: none;
-
-  &:before {
-    background-image: url(../img/arrows/#{$link-arrow}.png);
-    background-image: url(../img/arrows/#{$link-arrow}.svg);
-    background-size: 100%;
-    content: '';
-    display: inline-block;
-    height: 1.2rem;
-    margin-bottom: -1px;
-    margin-right: 4px;
-    width: 1.2rem;
-  }
-
-  &:hover::after {
-    background-image: url(../img/arrows/#{$link-arrow}-hover.png);
-    background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
-  }
-
-  &:visited {
-    color: $color-medium;
-
-    &:hover {
-      color: $color-medium-hover;
-    }
-  }
-}
-
-.link-arrow-left {
-  @include link-arrow-left(medium/arrow-left);
-}
-
-.link-arrow-right {
-  @include link-arrow-right(medium/arrow-right);
-}
-
-.link-arrow-right-alt {
-  @include link-arrow-right(bright/arrow-right);
 }
 
 @mixin display-icon($icon, $direction, $size) {
@@ -119,6 +51,21 @@
     background-image: url(../img/#{$icon}-hover.png);
     background-image: url(../img/#{$icon}-hover.svg);
   }
+}
+
+.link-arrow-left {
+  @include display-icon(arrows/medium/arrow-left, before, 1.2rem);
+  @extend %link-arrow;
+}
+
+.link-arrow-right {
+  @include display-icon(arrows/medium/arrow-right, after, 1.2rem);
+  @extend %link-arrow;
+}
+
+.link-arrow-right-alt {
+  @include display-icon(arrows/bright/arrow-right, after, 1.2rem);
+  @extend %link-arrow;
 }
 
 .social_icon-twitter {

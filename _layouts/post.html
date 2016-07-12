@@ -10,7 +10,7 @@ layout: default
 
 <div class="usa-grid">
 
-  <a class="back-blog" href="{{ site.baseurl }}/blog/">Blog</a>
+  <a class="back-blog link-arrow-left" href="{{ site.baseurl }}/blog/">Blog</a>
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
@@ -56,7 +56,7 @@ layout: default
     <div class="usa-width-one-half">
       {% if page.previous %}
         <a href="{{ site.baseurl }}{{ page.previous.url }}">
-          <span class="post-pagination-previous">Previous Post</span>
+          <span class="link-arrow-left">Previous Post</span>
           <h5>&ldquo;{{ page.previous.title }}&rdquo;</h5>
         </a>
       {% endif %}
@@ -64,7 +64,7 @@ layout: default
     <div class="usa-width-one-half">
       {% if page.next %}
           <a href="{{ site.baseurl }}{{ page.next.url }}">
-            <span class="post-pagination-next">Next Post</span>
+            <span class="link-arrow-right">Next Post</span>
             <h5>&ldquo;{{ page.next.title }}&rdquo;</h5>
           </a>
       {% endif %}
