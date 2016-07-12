@@ -41,7 +41,7 @@ layout: default
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      {% if page.image != null and page.image_feature_small == true %}
+      {% if page.image and page.image_feature_small == true %}
         <img class="image-feature-small" src="{{ site.baseurl }}{{ page.image }}" alt="">
       {% endif %}
 
