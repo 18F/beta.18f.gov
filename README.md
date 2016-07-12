@@ -8,7 +8,8 @@ Run each of the following steps to get the site up and running.
 
 1. `git clone git@github.com:18F/beta.18f.gov`
 2. `cd beta.18f.gov`
-3. `jekyll serve`
+3. `bundle install`
+4. `jekyll serve`
 
 You should be able to see the site at: http://127.0.0.1:4000
 
