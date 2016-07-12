@@ -4,7 +4,7 @@ A fresh start for 18f.gsa.gov. Online at beta.18f.gov. We plan to use the U.S. W
 
 ## Installation
 
-Copy and paste each of the following steps to get the site up and running.
+Run each of the following steps to get the site up and running.
 
 1. `git clone git@github.com:18F/beta.18f.gov`
 2. `cd beta.18f.gov`
