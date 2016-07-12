@@ -56,16 +56,28 @@
 .link-arrow-left {
   @include display-icon(arrows/medium/arrow-left, before, 1.2rem);
   @extend %link-arrow;
+
+  &:visited {
+    color: $color-medium;
+  }
 }
 
 .link-arrow-right {
   @include display-icon(arrows/medium/arrow-right, after, 1.2rem);
   @extend %link-arrow;
+
+  &:visited {
+    color: $color-medium;
+  }
 }
 
 .link-arrow-right-alt {
   @include display-icon(arrows/bright/arrow-right, after, 1.2rem);
   @extend %link-arrow;
+
+  &:visited {
+    color: $color-bright;
+  }
 }
 
 .social_icon-twitter {
