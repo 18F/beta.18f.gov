@@ -103,6 +103,10 @@ footer[role=contentinfo] {
 
     @include span-columns(2);
   }
+
+  &:last-child {
+    margin-right: 2.35765%;
+  }
 }
 
 .footer-links-heading {
@@ -125,7 +129,8 @@ footer[role=contentinfo] {
   margin-top: $site-margins;
 
   @include media($medium-screen) {
-    margin-top: 0;
+    @include span-columns(4);
+      margin-top: 0;
   }
 
   label {
