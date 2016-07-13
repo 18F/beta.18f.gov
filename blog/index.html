@@ -32,22 +32,7 @@ title: Blog
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          <p class="post-byline">
-          {% if post.authors %}
-            By
-            {% for author in post.authors %}
-              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <a class="post-author" href="" itemprop="name">{{ author | lookup:"authors,full_name"}}</a>
-              </span>
-              {% assign authorCount = post.authors | size %}
-              {% if authorCount > 1 %}
-                {% unless forloop.last %}
-                  <span class="post-author-comma">,</span>
-                {% endunless %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          </p>
+          {% include post-author.html %}
           {{ post.excerpt }}
           <p>
             <a class="link-arrow-right" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
