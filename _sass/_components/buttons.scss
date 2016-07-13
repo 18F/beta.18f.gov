@@ -97,3 +97,18 @@
     color: $color-bright;
   }
 }
+
+.back-blog {
+  display: inline-block;
+  font-size: $h6-font-size;
+  margin-top: $section-margins;
+
+  @include media($medium-screen + 200px) {
+    margin-top: 0.7rem;
+    position: absolute;
+  }
+
+  &:hover {
+    color: $color-dark;
+  }
+}
