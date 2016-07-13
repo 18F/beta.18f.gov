@@ -85,7 +85,7 @@ footer[role=contentinfo] {
 
 .footer-logo-links {
   @include media($medium-screen) {
-    @include span-columns(6);
+    @include span-columns(2);
   }
 }
 
@@ -112,5 +112,27 @@ footer[role=contentinfo] {
 
   img {
     width: 4.4rem;
+  }
+}
+
+.footer-newsletter {
+  label {
+    margin-top: 0;
+  }
+
+  p {
+    font-weight: $font-bold;
+  }
+
+  .form-group {
+    float: left;
+    width: 60%;
+  }
+
+  [type="submit"] {
+    display: inline;
+    margin-top: 1em;
+    padding: 0;
+    width: 80px;
   }
 }
