@@ -49,13 +49,13 @@ footer[role=contentinfo] {
   .usa-accordion {
     button {
       @include padding(1.4rem null);
-      background-position: left 10rem center;
+      background-position: left 7rem center;
     }
   }
 
   button {
     font-size: $h6-font-size;
-    font-style: $font-sans;
+    font-family: $font-sans;
     font-weight: $font-normal;
     text-align: left;
   }
