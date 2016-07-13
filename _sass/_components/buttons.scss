@@ -87,3 +87,13 @@
 .social_icon-newsletter {
   @include display-icon(global/social-icons/envelope, before, 1.4rem);
 }
+
+.link-rss {
+  @include display-icon(global/rss, after, $h6-font-size);
+  float: right;
+  font-size: $h5-font-size;
+
+  &:visited {
+    color: $color-bright;
+  }
+}
