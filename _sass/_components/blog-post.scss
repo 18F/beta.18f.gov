@@ -19,10 +19,6 @@
 }
 
 .single-post {
-  header[role=banner] {
-//    border-bottom: 1px solid #cccccc; // See if we can use a WDS color
-  }
-
   article {
     @include margin(0 null $section-margins null);
 
@@ -92,30 +88,6 @@
 
 .post-author-comma {
   margin-left: -3px;
-}
-
-.post-tags {
-  a {
-    @include padding(0.6rem null);
-    background-color: $color-medium;
-    display: inline-block;
-    font-size: $h6-font-size;
-    font-weight: $font-bold;
-    line-height: 1;
-    margin-bottom: 4px;
-    margin-right: 0;
-    text-decoration: none;
-    text-transform: lowercase;
-
-    &:hover {
-      background-color: $color-medium-hover;
-    }
-
-    &:hover,
-    &:visited {
-      color: $color-white;
-    }
-  }
 }
 
 @mixin widget-small() {
