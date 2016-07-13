@@ -2,17 +2,30 @@
 permalink: /
 layout: default
 title: Home
----
+featured_images:
+  - feature: A pass to get every kid in a national park
+    image: /assets/img/home/hero-every-kid.png
+    link: everykidinapark.gov
+  - feature: A pass to get every kid in a national park
+    image: /assets/img/home/hero-every-kid.png
+    link: everykidinapark.gov
 
-<section class="hero">
-  <div class="usa-grid">
-    <div class="hero-callout background-dark">
-      <h2>We’re building:  <span class="hero-callout-alt_color">A pass to get every kid in a national park</span></h2>
-      <a href="https://everykidinapark.gov/">everykidinapark.gov</a>
-      <a class="usa-button usa-button-big usa-button-secondary" href="#">Learn about what we do</a>
+---
+{% if page.featured_images != null %}
+  {% for item in page.featured_images %}
+  <section class="hero" style="background-image: url('{{ site.baseurl }}{{ item.image }}')">
+    <div class="usa-grid">
+      <div class="hero-callout background-dark">
+        <h2>We’re building:  <span class="hero-callout-alt_color">{{ item.feature }}</span></h2>
+        <a href="http://{{ item.link }}">{{ item.link }}</a>
+        <a class="usa-button usa-button-big usa-button-secondary" href="#">Learn about what we do</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  {% endfor %}
+{% endif %}
+
+
 <section class="usa-grid usa-section">
   <div class="usa-width-one-third">
     <h2>Delivery is the strategy.</h2>
