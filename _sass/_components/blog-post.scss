@@ -155,41 +155,6 @@
   }
 }
 
-.social_bar {
-  @include widget-small;
-  margin-bottom: $section-margins;
-
-  h5 {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-
-  ul {
-    @include unstyled-list;
-    margin-top: 1.5em;
-
-    @include media($medium-screen) {
-      float: right;
-      margin-top: 0;
-    }
-
-    li {
-      display: inline;
-      margin-right: 2.7rem;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  a {
-    &:before {
-      margin-right: 0.8rem;
-    }
-  }
-}
-
 .posts {
   ul {
     @include unstyled-list;
