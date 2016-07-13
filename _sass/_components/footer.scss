@@ -73,6 +73,12 @@ footer[role=contentinfo] {
   @include media($medium-screen) {
     display: none;
   }
+
+  button,
+  a,
+  a:hover {
+    padding-left: 0;
+  }
 }
 
 .footer-desktop {
