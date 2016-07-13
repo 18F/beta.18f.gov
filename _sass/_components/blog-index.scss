@@ -1,58 +1,6 @@
 // Blog index
 // ==========================
 
-.link-rss {
-  @include display-icon(global/rss, after, $h6-font-size);
-  float: right;
-  font-size: $h5-font-size;
-
-  &:visited {
-    color: $color-bright;
-  }
-}
-
-.post-list {
-  @include unstyled-list;
-
-  h2 {
-    font-size: $h3-font-size;
-    margin-top: 0.5em;
-
-    a {
-      color: $color-base;
-      text-decoration: none;
-    }
-  }
-
-  li {
-    border-bottom: $border-light;
-    display: inline-block;
-    margin-top: $section-margins;
-    padding-bottom: $section-margins;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  .post-tags {
-    margin-top: 1em;
-  }
-
-  .media_link {
-    margin-top: $site-margins;
-
-    @include media($medium-screen) {
-      float: right;
-      margin-top: 0;
-    }
-  }
-
-  img {
-    max-height: 26rem;
-  }
-}
-
 .blog-content {
   margin-top: $section-margins;
 }
@@ -71,28 +19,6 @@
     .page-heading {
       @include media($medium-screen) {
         display: initial;
-      }
-    }
-  }
-}
-
-.pagination {
-  color: $color-gray;
-  font-size: $h5-font-size;
-  margin-bottom: $section-margins;
-  margin-top: 2rem;
-
-  > div {
-    float: left;
-    width: 33%;
-
-    &:nth-child(2) {
-      text-align: center;
-    }
-
-    &:last-child {
-      a {
-        float: right;
       }
     }
   }
