@@ -10,8 +10,15 @@
     {{ content }}
 
     {% include nav-mobile.html %}
-    {% include footer/mobile.html %}
-    {% include footer/desktop.html %}
+
+    <footer role="contentinfo">
+      <div class="usa-grid">
+      {% include footer/mobile.html %}
+      {% include footer/desktop.html %}
+      {% include newsletter.html %}
+      </div>
+    </footer>
+
     {% include javascript.html %}
 
   </body>
