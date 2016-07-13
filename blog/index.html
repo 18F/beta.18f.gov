@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Blog
+skip_index: true
 ---
 
 <section class="usa-section background-dark">
   <div class="usa-grid">
     <h1 class="page-heading">{{ page.title }}</h1>
     <div class="blog-search">
-      <form class="usa-search usa-search-small" action="/search/">
+      <form class="usa-search usa-search-small" action="{{ site.baseurl }}/search/">
         <div role="search">
           <label class="usa-sr-only" for="search-field-small">Search small</label>
           <input id="search-field-small" type="search" name="q">

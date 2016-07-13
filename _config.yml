@@ -1,7 +1,7 @@
 # Site settings
 title: "18F: Digital service delivery"
 description: "A fresh start for 18f.gsa.gov"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog
 permalink: pretty
 url: "https://beta.18f.gov" # the base hostname & protocol for your site
 logo: /assets/img/logos/18F-Logo-Bright-S.png
