@@ -131,6 +131,7 @@ footer[role=contentinfo] {
 
   [type="submit"] {
     background-color: $color-medium;
+    border-radius: 0 3px 3px 0;
     display: inline;
     font-family: $font-sans;
     font-size: $h5-font-size;
