@@ -1,16 +1,19 @@
 <p class="post-byline">
-{% if post.authors %}
+{% if include.context == 'page' and page.authors %}
+  {% assign authors = page.authors %}
+{% elsif include.context == 'post' and post.authors %}
+  {% assign authors = post.authors | to_yaml %}
+{% endif %}
   By
-  {% for author in post.authors %}
+  {% for author in authors %}
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
       <a class="post-author" href="" itemprop="name">{{ author | lookup:"authors,full_name"}}</a>
     </span>
-    {% assign authorCount = post.authors | size %}
+    {% assign authorCount = authors | size %}
     {% if authorCount > 1 %}
       {% unless forloop.last %}
         <span class="post-author-comma">,</span>
       {% endunless %}
     {% endif %}
   {% endfor %}
-{% endif %}
 </p>

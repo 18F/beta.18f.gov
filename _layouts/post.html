@@ -15,21 +15,7 @@ layout: default
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
       <p class="post-byline">
-      {% if page.authors %}
-        By
-        {% for author in page.authors %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <a class="post-author" href="" itemprop="name">{{ author | lookup:"authors,full_name"}}</a>
-          {% assign authorCount = page.authors | size %}
-          {% if authorCount > 1 %}
-            {% unless forloop.last %}
-              <span class="post-author-comma">,</span>
-            {% endunless %}
-          {% endif %}
-          </span>
-        {% endfor %}
-        on
-      {% endif %}
+      {% include post-author.html context="page" %}
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
       </p>
       <span class="post-tags" itemprop="keywords">
