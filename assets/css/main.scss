@@ -48,4 +48,8 @@
   h1 {
     color: $color-bright;
   }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }

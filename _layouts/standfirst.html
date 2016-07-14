@@ -4,8 +4,12 @@ layout: default
 
 <section class="background-dark usa-section standfirst">
   <div class="usa-grid">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.lead }}</p>
+    <header class="usa-width-one-third">
+      <h1>{{ page.title }}</h1>
+    </header>
+    <div class="usa-width-two-thirds">
+      <p>{{ page.lead }}</p>
+    </div>
   </div>
 </section>
 {{ content }}
