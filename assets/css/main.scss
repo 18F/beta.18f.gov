@@ -31,8 +31,6 @@
 
 .page-what-we-deliver {
   .main-content {
-    margin-top: $section-margins;
-
     img {
       width: 114px;
       margin-bottom: $site-margins;
@@ -41,5 +39,13 @@
 
   .usa-width-one-sixth {
     text-align: center;
+  }
+}
+
+.standfirst {
+  margin-bottom: $section-margins;
+
+  h1 {
+    color: $color-bright;
   }
 }
