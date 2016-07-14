@@ -33,7 +33,7 @@ skip_index: true
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          {% include post-author.html %}
+          {% include post-author.html context="post" %}
           {{ post.excerpt }}
           <p>
             <a class="link-arrow-right" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
