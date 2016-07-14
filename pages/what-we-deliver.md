@@ -7,9 +7,9 @@ lead: 18F will gather the right experts for the job, work hand-in-hand with your
 
 <section class="usa-grid">
   <div class="usa-width-one-sixth">
-  <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home-icons/custom-products.svg" alt="">
-</div>
-<div class="usa-width-five-sixths">
+    <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home-icons/custom-products.svg" alt="">
+  </div>
+  <div class="usa-width-five-sixths">
 {% markdown %}
 ## Custom products to solve your problems
 
@@ -20,7 +20,7 @@ If your agency’s project has a digital component, our team of software develop
 - Revamp your online presence — from data to branding and everything in between — like we did with the [Federal Election Commission](https://beta.fec.gov/).
 - Scope a solution or workshop an idea, like we did with the [Department of Labor’s Wage and Hour Division](https://18f.gsa.gov/2015/09/09/how-a-two-day-spring-moved-an-agency-twenty-years-forward/).
 {% endmarkdown %}
-</div>
+  </div>
 </section>
 
 <section class="usa-grid">
