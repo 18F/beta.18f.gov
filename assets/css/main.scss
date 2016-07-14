@@ -28,3 +28,18 @@
 // ==========================
 
 @import "_templates/home";
+
+.page-what-we-deliver {
+  .main-content {
+    margin-top: $section-margins;
+
+    img {
+      width: 114px;
+      margin-bottom: $site-margins;
+    }
+  }
+
+  .usa-width-one-sixth {
+    text-align: center;
+  }
+}
