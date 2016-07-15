@@ -6,6 +6,9 @@ lead: We help federal agencies build, buy, and share modern digital services to 
 ---
 
 <section class="usa-grid usa-section section-list">
+  <div class="usa-width-one-third">
+    <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home-icons/custom-products.svg" alt="">
+  </div>
   <div class="usa-width-two-thirds">
 {% markdown %}
 ## Custom products to solve your problems
@@ -18,12 +21,12 @@ If your agency’s project has a digital component, our team of software develop
 - Scope a solution or workshop an idea, like we did with the [Department of Labor’s Wage and Hour Division](https://18f.gsa.gov/2015/09/09/how-a-two-day-spring-moved-an-agency-twenty-years-forward/).
 {% endmarkdown %}
   </div>
-  <div class="usa-width-one-third">
-    <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home-icons/custom-products.svg" alt="">
-  </div>
 </section>
 
 <section class="usa-grid usa-section section-list">
+  <div class="usa-width-one-third">
+    <img src="{{ site.baseurl }}/assets/img/home-icons/innovative-ways.svg" alt="">
+  </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
 ## Innovative ways to buy technology
@@ -38,12 +41,12 @@ our team is excited to work with you. We can help you:
 - Buy small pieces of open source code to advance your projects, like we’re doing with our [micro-purchase platform](https://micropurchase.18f.gov/).
   {% endmarkdown %}
   </div>
-  <div class="usa-width-one-third">
-    <img src="{{ site.baseurl }}/assets/img/home-icons/innovative-ways.svg" alt="">
-  </div>
 </section>
 
 <section class="usa-grid usa-section section-list">
+  <div class="usa-width-one-third">
+    <img src="{{ site.baseurl }}/assets/img/home-icons/government.svg" alt="">
+  </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
 ## Platforms built for government
@@ -59,12 +62,12 @@ actively improved to meet your needs. We can help you:
 - Release and manage your API with [api.data.gov](https://api.data.gov/).
   {% endmarkdown %}
   </div>
-  <div class="usa-width-one-third">
-    <img src="{{ site.baseurl }}/assets/img/home-icons/government.svg" alt="">
-  </div>
 </section>
 
 <section class="usa-grid usa-section section-list">
+  <div class="usa-width-one-third">
+    <img src="{{ site.baseurl }}/assets/img/home-icons/path.svg" alt="">
+  </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
 ## A path to becoming a digitally-powered organization
@@ -79,12 +82,12 @@ you form new digital habits, and ultimately drive organizational culture change.
 - Establish a model to modernize your legacy systems.
   {% endmarkdown %}
   </div>
-  <div class="usa-width-one-third">
-    <img src="{{ site.baseurl }}/assets/img/home-icons/path.svg" alt="">
-  </div>
 </section>
 
 <section class="usa-grid usa-section section-list">
+  <div class="usa-width-one-third">
+    <img src="{{ site.baseurl }}/assets/img/home-icons/modern-techniques.svg" alt="">
+  </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
 ## Modern digital service techniques
@@ -98,8 +101,5 @@ copy and use at your agency. We can help you:
 - Host a design studio, like we did with the [Department of the Interior](https://18f.gsa.gov/2014/09/25/design-studio-onrr/).
 - Create your own lightweight knowledge sharing platform based off 18F’s [Guides](https://pages.18f.gov/guides-template/) and [Pages](https://pages.18f.gov/) projects.
   {% endmarkdown %}
-  </div>
-  <div class="usa-width-one-third">
-    <img src="{{ site.baseurl }}/assets/img/home-icons/modern-techniques.svg" alt="">
   </div>
 </section>

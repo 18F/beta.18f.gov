@@ -11,5 +11,11 @@
 
   .usa-width-one-third {
     text-align: center;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-left: 4.82916%;
+      margin-right: 0;
+    }
   }
 }
