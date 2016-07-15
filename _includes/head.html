@@ -9,14 +9,14 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Title and meta description
+<!-- Title and meta tags
 ================================================== -->
 {% if page.title %}
   <title>{{ site.title }} | {{ page.title }}</title>
-  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ page.title | xml_escape }}" />
+  <meta property="og:title" content="{{ site.title | xml_escape }} | {{ page.title | xml_escape }}" />
 {% else %}
   <title>{{ site.title }} | {{ site.description }}</title>
-  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ site.title | xml_escape }}" />
+  <meta property="og:title" content="{{ site.title | xml_escape }} | {{ site.title | xml_escape }}" />
 {% endif %}
 
 {% if page.description %}
@@ -25,6 +25,18 @@
 {% else %}
   <meta name="description" content="{{ site.description | xml_escape }}">
   <meta property="og:description" content="{{ site.description | xml_escape }}" />
+{% endif %}
+
+{% if page.author %}
+  <meta name="author" content="{{ page.author | array_to_sentence_string }}">
+{% endif %}
+
+{% if page.date %}
+  <meta name="date" content="{{ page.date }} scheme="YYYY-MM-DD">
+{% endif %}
+
+{% if page.tags %}
+  <meta name="keywords" content="{{ page.tags  | array_to_sentence_string }}">
 {% endif %}
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
@@ -45,5 +57,4 @@
 
 <!-- CSS
 ================================================== -->
-  <link rel="stylesheet" href="{{ "/assets/fonts/google-fonts.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">

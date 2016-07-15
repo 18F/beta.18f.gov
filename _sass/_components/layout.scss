@@ -48,11 +48,58 @@
     color: $color-white;
   }
 
-  a {
+  a
+   {
     color: $color-bright;
 
     &:hover {
       color: $color-bright-hover;
     }
+  }
+
+  .usa-button,
+  .usa-button-primary,
+  .usa-button:visited,
+  .usa-button-primary:visited,
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    background-color: $color-bright;
+
+    &:hover {
+      background-color: $color-bright-hover;
+    }
+  }
+
+  .usa-search.usa-search-small [type="submit"] {
+    background-image: url("../img/global/search-dark.png");
+    background-image: url("../img/global/search-dark.svg");
+  }
+
+  input,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="search"],
+  input[type="file"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  textarea,
+  select {
+    border-color: $color-white;
+  }
+}
+
+.header_border,
+.single-post {
+  header[role=banner] {
+    border-bottom: 1px solid #cccccc; // See if we can use a WDS color
   }
 }

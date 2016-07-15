@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 
   {% include head.html %}
 
-  <body class="page-{{ page.title | slugify }}">
+  <body class="page-{{ page.title | slugify }}
+  {% if page.header_border == true %}header_border{% endif %} {% if page.path contains '_posts' %}single-post{% endif %}">
 
     {% include header.html %}
 
-    {{ content }}
+    <main id="main-content">
+      {{ content }}
+    </main>
 
     {% include nav-mobile.html %}
     {% include footer/mobile.html %}
     {% include footer/desktop.html %}
     {% include javascript.html %}
+    {% jekyll_pages_api_search_load %}
 
   </body>
 </html>
