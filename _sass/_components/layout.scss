@@ -108,10 +108,14 @@
 .section-intro {
   h1 {
     color: $color-bright;
+    display: inline;
+    font-size: $h2-font-size;
   }
 
-  p:last-child {
-    margin-bottom: 0;
+  p {
+    display: inline;
+    font-size: $h2-font-size;
+    font-weight: $font-bold;
   }
 }
 
