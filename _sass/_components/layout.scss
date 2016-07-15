@@ -48,6 +48,10 @@
     color: $color-white;
   }
 
+  .section-heading {
+    color: $color-bright;
+  }
+
   a
    {
     color: $color-bright;
@@ -101,5 +105,32 @@
 .single-post {
   header[role=banner] {
     border-bottom: 1px solid #cccccc; // See if we can use a WDS color
+  }
+}
+
+// Dark blue page intros
+.section-intro {
+  header {
+    max-width: 81.2rem; // Width of 10 columns
+  }
+
+  .section-heading {
+    display: inline;
+    font-size: $h2-font-size;
+  }
+
+  h2 {
+    display: inline;
+    font-size: $h2-font-size;
+    font-weight: $font-bold;
+  }
+}
+
+// A list of sections separated with a light border
+.section-list {
+  border-bottom: $border-light;
+
+  ul {
+    margin-bottom: 0;
   }
 }

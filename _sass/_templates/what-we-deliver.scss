@@ -1,0 +1,21 @@
+// What we deliver page
+// ==========================
+
+.page-what-we-deliver {
+  .main-content {
+    img {
+      width: 11.4rem;
+      margin-bottom: $site-margins;
+    }
+  }
+
+  .usa-width-one-third {
+    text-align: center;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-left: 2.35765%; // Add column gutter to the left
+      margin-right: 0; // Remove column gutter on the right
+    }
+  }
+}

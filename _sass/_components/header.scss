@@ -24,6 +24,8 @@ header[role=banner] {
         }
 
         &.usa-current {
+          color: $color-black;
+
           span {
             border-bottom: $border-accent;
             padding-bottom: 1.2rem;
