@@ -23,3 +23,5 @@ If you’re interested in joining 18F, you can learn more about the
 interview process, government pay grades, benefits, and our open
 positions at
 [join.18f.gov](https://pages.18f.gov/joining-18f/index.html).
+
+<a class="usa-button" href="https://pages.18f.gov/joining-18f/open-positions/">View open positions</a>

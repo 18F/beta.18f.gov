@@ -2,12 +2,17 @@
 // ==========================
 
 .usa-button,
-.usa-button:visited {
+.usa-button:visited,
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="image"] {
   background-color: $color-medium;
   font-family: $font-sans;
 
   &:hover {
-    background-color: $color-dark;
+    background-color: $color-medium-hover;
   }
 
   &.usa-button-secondary,
