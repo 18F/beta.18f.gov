@@ -2,7 +2,7 @@
 title: What we deliver
 permalink: /what-we-deliver/
 layout: default-intro
-lead: 18F will gather the right experts for the job, work hand-in-hand with your team, use modern techniques, and talk with real users throughout the process to make sure we’re building the right thing, not just any thing.
+lead: We help federal agencies build, buy, and share modern digital services to improve the user experience of government.
 ---
 
 <section class="usa-grid usa-section section-list">
