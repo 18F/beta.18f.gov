@@ -16,7 +16,7 @@
 
 .page-blog {
   .background-dark {
-    .page-heading {
+    .section-heading {
       @include media($medium-screen) {
         display: initial;
       }

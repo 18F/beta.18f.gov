@@ -48,6 +48,10 @@
     color: $color-white;
   }
 
+  .section-heading {
+    color: $color-bright;
+  }
+
   a
    {
     color: $color-bright;
@@ -106,8 +110,7 @@
 
 // Dark blue page intros
 .section-intro {
-  h1 {
-    color: $color-bright;
+  .section-heading {
     display: inline;
     font-size: $h2-font-size;
   }
