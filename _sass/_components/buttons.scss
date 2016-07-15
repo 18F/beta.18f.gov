@@ -21,59 +21,94 @@
   }
 }
 
-
-@mixin link-arrow-right($link-arrow) {
+%link-arrow {
   font-weight: $font-bold;
+  font-size: $small-font-size;
   text-decoration: none;
-
-  &:after {
-    background-image: url(../img/arrows/#{$link-arrow}.png);
-    background-image: url(../img/arrows/#{$link-arrow}.svg);
-    background-size: 100%;
-    content: '';
-    display: inline-block;
-    height: 1.2rem;
-    margin-bottom: -2px;
-    margin-left: 4px;
-    width: 1.2rem;
-  }
-
-  &:hover::after {
-    background-image: url(../img/arrows/#{$link-arrow}-hover.png);
-    background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
-  }
 }
 
-@mixin link-arrow-left($link-arrow) {
-  font-weight: $font-bold;
-  text-decoration: none;
-
-  &:before {
-    background-image: url(../img/arrows/#{$link-arrow}.png);
-    background-image: url(../img/arrows/#{$link-arrow}.svg);
+@mixin display-icon($icon, $direction, $size) {
+  &:#{$direction} {
+    background-image: url(../img/#{$icon}.png);
+    background-image: url(../img/#{$icon}.svg);
     background-size: 100%;
     content: '';
     display: inline-block;
-    height: 1.2rem;
-    margin-bottom: -2px;
-    margin-right: 4px;
-    width: 1.2rem;
+    height: $size;
+    margin-bottom: -1px;
+    width: $size;
+
+    @if $direction == 'after' {
+      margin-left: 4px;
+    }
+
+      @else {
+        margin-right: 4px;
+      }
+    }
+
+  &:hover::#{$direction} {
+    background-image: url(../img/#{$icon}-hover.png);
+    background-image: url(../img/#{$icon}-hover.svg);
   }
 
-  &:hover::after {
-    background-image: url(../img/arrows/#{$link-arrow}-hover.png);
-    background-image: url(../img/arrows/#{$link-arrow}-hover.svg);
+  &:visited {
+    color: $color-medium;
+  }
+
+  &:hover {
+    color: $color-medium-hover;
   }
 }
 
 .link-arrow-left {
-  @include link-arrow-left(medium/arrow-left);
+  @include display-icon(arrows/medium/arrow-left, before, 1.2rem);
+  @extend %link-arrow;
 }
 
 .link-arrow-right {
-  @include link-arrow-right(medium/arrow-right);
+  @include display-icon(arrows/medium/arrow-right, after, 1.2rem);
+  @extend %link-arrow;
 }
 
 .link-arrow-right-alt {
-  @include link-arrow-right(bright/arrow-right);
+  @include display-icon(arrows/bright/arrow-right, after, 1.2rem);
+  @extend %link-arrow;
+}
+
+.social_icon-twitter {
+  @include display-icon(global/social-icons/twitter, before, 1.4rem);
+}
+
+.social_icon-rss {
+  @include display-icon(global/social-icons/rss, before, 1.4rem);
+}
+
+.social_icon-newsletter {
+  @include display-icon(global/social-icons/envelope, before, 1.4rem);
+}
+
+.link-rss {
+  @include display-icon(global/rss, after, $h6-font-size);
+  float: right;
+  font-size: $h5-font-size;
+
+  &:visited {
+    color: $color-bright;
+  }
+}
+
+.back-blog {
+  display: inline-block;
+  font-size: $h6-font-size;
+  margin-top: $section-margins;
+
+  @include media($medium-screen + 200px) {
+    margin-top: 0.7rem;
+    position: absolute;
+  }
+
+  &:hover {
+    color: $color-dark;
+  }
 }

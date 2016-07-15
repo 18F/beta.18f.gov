@@ -3,10 +3,17 @@
 
 .section-deliver {
   a {
-    @include link-arrow-right(bright/arrow-right);
     display: inline-block;
     margin-top: 5rem;
     font-size: $h5-font-size;
+
+    &:visited {
+      color: $color-bright;
+
+      &:hover {
+        color: $color-bright-hover;
+      }
+    }
   }
 
   p {
@@ -21,13 +28,17 @@
 .section-deliver-icon {
   float: left;
   margin-top: 3rem;
-  min-height: 13rem;
   padding-right: $site-margins;
   width: 50%;
+
+  &:nth-child(odd) {
+    clear: left;
+  }
 
   &:nth-child(even) {
     padding-right: 0;
   }
+
 
   @include media($medium-screen) {
     $icon-padding: 6%;
@@ -36,6 +47,10 @@
 
     &:last-child {
       padding-right: 0;
+    }
+
+    &:nth-child(odd) {
+      clear: none;
     }
 
     &:nth-child(even) {

@@ -5,15 +5,23 @@
     <a {% if current[1] == 'what-we-deliver' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/what-we-deliver/">What we deliver</a>
   </li>
   <li>
-    <a {% if current[1] == 'how-we-work' %}class="usa-current"{% endif %} href="#">How we work</a>
+    <a {% if current[1] == 'how-we-work' %}class="usa-current"{% endif %} href="#">
+      <span>How we work</span>
+    </a>
   </li>
   <li>
-    <a {% if current[1] == 'hire-18f' %}class="usa-current"{% endif %} href="#">Hire 18F</a>
+    <a {% if current[1] == 'hire-18f' %}class="usa-current"{% endif %} href="#">
+      <span>Hire 18F</span>
+    </a>
   </li>
   <li>
-    <a {% if current[1] == 'join-18f' %}class="usa-current"{% endif %} href="#">Join 18F</a>
+    <a {% if current[1] == 'join-18f' %}class="usa-current"{% endif %} href="#">
+      <span>Join 18F</span>
+    </a>
   </li>
   <li>
-    <a {% if current[1] == 'blog' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/blog/">Blog</a>
+    <a {% if current[1] == 'blog' or page.path contains '_posts' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/blog/">
+      <span>Blog</span>
+    </a>
   </li>
 </ul>
