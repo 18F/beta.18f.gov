@@ -14,8 +14,15 @@
     </main>
 
     {% include nav-mobile.html %}
-    {% include footer/mobile.html %}
-    {% include footer/desktop.html %}
+
+    <footer role="contentinfo">
+      <div class="usa-grid">
+      {% include footer/mobile.html %}
+      {% include footer/desktop.html %}
+      {% include newsletter.html %}
+      </div>
+    </footer>
+
     {% include javascript.html %}
     {% jekyll_pages_api_search_load %}
 

@@ -49,13 +49,13 @@ footer[role=contentinfo] {
   .usa-accordion {
     button {
       @include padding(1.4rem null);
-      background-position: left 10rem center;
+      background-position: left 7rem center;
     }
   }
 
   button {
     font-size: $h6-font-size;
-    font-style: $font-sans;
+    font-family: $font-sans;
     font-weight: $font-normal;
     text-align: left;
   }
@@ -73,6 +73,12 @@ footer[role=contentinfo] {
   @include media($medium-screen) {
     display: none;
   }
+
+  button,
+  a,
+  a:hover {
+    padding-left: 0;
+  }
 }
 
 .footer-desktop {
@@ -85,7 +91,7 @@ footer[role=contentinfo] {
 
 .footer-logo-links {
   @include media($medium-screen) {
-    @include span-columns(6);
+    @include span-columns(2);
   }
 }
 
@@ -96,6 +102,10 @@ footer[role=contentinfo] {
     margin-top: 0;
 
     @include span-columns(2);
+  }
+
+  &:last-child {
+    margin-right: 2.35765%;
   }
 }
 
@@ -112,5 +122,45 @@ footer[role=contentinfo] {
 
   img {
     width: 4.4rem;
+  }
+}
+
+.footer-newsletter {
+  margin-top: $site-margins;
+
+  @include media($medium-screen) {
+    @include span-columns(4);
+      margin-top: 0;
+  }
+
+  label {
+    margin-top: 0;
+  }
+
+  p {
+    font-weight: $font-bold;
+  }
+
+  .form-group {
+    float: left;
+    width: calc(100% - 9rem);
+  }
+
+  input {
+    font-size: $h5-font-size;
+    height: 3.3rem;
+  }
+
+  [type="submit"] {
+    @include margin(1.7rem 0 null 1rem);
+    background-color: $color-medium;
+    display: inline;
+    font-family: $font-sans; // TODO: remove this when we fix variables import
+    padding: 0;
+    width: 8rem;
+
+    &:hover {
+      background-color: $color-medium-hover;
+    }
   }
 }
