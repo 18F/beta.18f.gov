@@ -155,7 +155,7 @@ footer[role=contentinfo] {
     @include margin(1.7rem 0 null 1rem);
     background-color: $color-medium;
     display: inline;
-    font-family: $font-sans;
+    font-family: $font-sans; // TODO: remove this when we fix variables import
     padding: 0;
     width: 8rem;
 
