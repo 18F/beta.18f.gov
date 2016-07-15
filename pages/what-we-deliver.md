@@ -5,7 +5,7 @@ layout: default-intro
 lead: 18F will gather the right experts for the job, work hand-in-hand with your team, use modern techniques, and talk with real users throughout the process to make sure we’re building the right thing, not just any thing.
 ---
 
-<section class="usa-grid">
+<section class="usa-grid usa-section section-list">
   <div class="usa-width-one-sixth">
     <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home-icons/custom-products.svg" alt="">
   </div>
@@ -23,7 +23,7 @@ If your agency’s project has a digital component, our team of software develop
   </div>
 </section>
 
-<section class="usa-grid">
+<section class="usa-grid usa-section section-list">
   <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/innovative-ways.svg" alt="">
   </div>
@@ -43,7 +43,7 @@ our team is excited to work with you. We can help you:
   </div>
 </section>
 
-<section class="usa-grid">
+<section class="usa-grid usa-section section-list">
   <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/government.svg" alt="">
   </div>
@@ -64,7 +64,7 @@ actively improved to meet your needs. We can help you:
   </div>
 </section>
 
-<section class="usa-grid">
+<section class="usa-grid usa-section section-list">
   <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/path.svg" alt="">
   </div>
@@ -84,7 +84,7 @@ you form new digital habits, and ultimately drive organizational culture change.
   </div>
 </section>
 
-<section class="usa-grid">
+<section class="usa-grid usa-section section-list">
   <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/modern-techniques.svg" alt="">
   </div>

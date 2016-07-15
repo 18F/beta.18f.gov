@@ -38,28 +38,4 @@
 // ==========================
 
 @import "_templates/home";
-
-.page-what-we-deliver {
-  .main-content {
-    img {
-      width: 114px;
-      margin-bottom: $site-margins;
-    }
-  }
-
-  .usa-width-one-sixth {
-    text-align: center;
-  }
-}
-
-.standfirst {
-  margin-bottom: $section-margins;
-
-  h1 {
-    color: $color-bright;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
+@import "_templates/what-we-deliver";
