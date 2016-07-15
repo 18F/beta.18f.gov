@@ -110,6 +110,10 @@
 
 // Dark blue page intros
 .section-intro {
+  header {
+    max-width: 81.2rem; // Width of 10 columns
+  }
+
   .section-heading {
     display: inline;
     font-size: $h2-font-size;
