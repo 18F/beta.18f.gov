@@ -103,3 +103,23 @@
     border-bottom: 1px solid #cccccc; // See if we can use a WDS color
   }
 }
+
+// Dark blue page intros
+.section-intro {
+  h1 {
+    color: $color-bright;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// A list of sections separated with a light border
+.section-list {
+  border-bottom: $border-light;
+
+  ul {
+    margin-bottom: 0;
+  }
+}

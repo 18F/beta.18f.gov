@@ -13,21 +13,3 @@
     text-align: center;
   }
 }
-
-.standfirst {
-  h1 {
-    color: $color-bright;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.section-list {
-  border-bottom: $border-light;
-
-  ul {
-    margin-bottom: 0;
-  }
-}
