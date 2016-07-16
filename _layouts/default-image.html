@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include feature-image.html %}
+
+<section class="usa-grid content-focus">
+  {% if page.lead %}
+    <h3>{{ page.lead }}</h3>
+  {% endif %}
+  {{ content }}
+</section>
