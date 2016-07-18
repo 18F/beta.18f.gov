@@ -2,11 +2,7 @@
 layout: default
 ---
 
-{% if page.image %}
-  {% unless page.image_hero == false %}
-    <div class="post-feature_image" style="background-image: url('{{ site.baseurl }}{{ page.image }}')"></div>
-  {% endunless  %}
-{% endif %}
+{% include feature-image.html %}
 
 <div class="usa-grid">
 

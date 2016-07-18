@@ -134,3 +134,8 @@
     margin-bottom: 0;
   }
 }
+
+.content-focus {
+  @include margin($section-margins auto);
+  max-width: 61rem;
+}
