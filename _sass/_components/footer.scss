@@ -51,6 +51,16 @@ footer[role=contentinfo] {
       @include padding(1.4rem null);
       background-position: right 0 center;
     }
+
+    [aria-expanded=false] {
+      background-image: url("../img/global/plus-alt.png");
+      background-image: url("../img/global/plus-alt.svg");
+    }
+
+    [aria-expanded=true] {
+      background-image: url("../img/global/minus-alt.png");
+      background-image: url("../img/global/minus-alt.svg");
+    }
   }
 
   button {
