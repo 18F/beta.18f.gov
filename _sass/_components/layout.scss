@@ -115,6 +115,10 @@
   }
 
   .section-heading {
+    margin-bottom: 0;
+  }
+
+  .section-heading-alt {
     display: inline;
     font-size: $h2-font-size;
   }
@@ -138,4 +142,11 @@
 .content-focus {
   @include margin($section-margins auto);
   max-width: 61rem;
+}
+
+.usa-content {
+  ol,
+  ul {
+    max-width: $text-max-width;
+  }
 }
