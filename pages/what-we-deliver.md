@@ -11,7 +11,7 @@ lead: We help federal agencies build, buy, and share modern digital services to 
   </div>
   <div class="usa-width-two-thirds">
 {% markdown %}
-## Custom products to solve your problems
+### Custom products to solve your problems
 
 If your agency’s project has a digital component, our team of software developers, visual designers, writers, and security experts can help you build it. We can help you:
 
@@ -31,7 +31,7 @@ If your agency’s project has a digital component, our team of software develop
   </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
-## Innovative ways to buy technology
+### Innovative ways to buy technology
 
 We believe federal IT acquisitions can be faster, cheaper, and produce
 better results. If your agency is developing a new request for quotation
@@ -51,7 +51,7 @@ our team is excited to work with you. We can help you:
   </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
-## Platforms built for government
+### Platforms built for government
 
 Federal agencies face a unique set of technology problems. We’re
 building a suite of secure, scalable tools and platforms that any agency
@@ -72,7 +72,7 @@ actively improved to meet your needs. We can help you:
   </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
-## A path to becoming a digitally-powered organization
+### A path to becoming a digitally-powered organization
 
 We can embed a fully-dedicated 18F team within your agency to work
 hand-in-hand with you to increase your internal digital capacity, help
@@ -92,7 +92,7 @@ you form new digital habits, and ultimately drive organizational culture change.
   </div>
   <div class="usa-width-two-thirds">
   {% markdown %}
-## Modern digital service techniques
+### Modern digital service techniques
 
 We can provide your team with the skills and knowledge they need to
 modernize your agency’s digital services. We’ve also built a number of
