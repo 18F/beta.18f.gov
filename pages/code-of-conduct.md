@@ -5,17 +5,17 @@ layout: default-intro
 lead:
 ---
 
-### Creating a culture of innovation
+## Creating a culture of innovation
 
 We aspire to create a culture where people work joyfully, communicate openly about things that matter, and provide great services for the American people and the world. We would like our team and our communities (including government and private sector colleagues) to reflect the diversity of America. We want to foster diversity of all kinds&mdash;not just the classes protected in law. Diversity fosters innovation. Diverse teams are creative teams. We need a diversity of perspective to create solutions for the real and urgent challenges we face.
 
 This is the 18F Code of Conduct. We follow all Equal Employment Opportunity laws, and our expectations are higher.  We expect everyone we work with to adhere to the [GSA Anti-harassment Policy](http://www.gsa.gov/portal/directive/d0/content/512516), even if they do not work for the General Services Administration. We expect everyone who works at 18F, attends 18F events and meetings, or participates in online forums or other virtual collaboration to follow this code of conduct and the laws and policies mentioned above. This applies to all of our methods of communication: office chatrooms, commit messages, email, and both formal and informal conversation.
 
-### Be empowering
+## Be empowering
 
 Consider what you can do to encourage and support others. Make room for quieter voices to contribute. Offer support and enthusiasm for great ideas. Leverage the low cost of experimentation to support your colleagues' ideas, and take care to acknowledge the original source, not just the most recent or loudest contributor. When someone offers something unexpected, look for ways you can contribute and collaborate. Share your knowledge and skills. Prioritize access for and input from those who are traditionally excluded from the civic process.
 
-### Boundaries
+## Boundaries
 
 Create boundaries to your own behavior and consider how you can create safe space that helps prevent unacceptable behavior by others. We do not seek to list all cases of unacceptable behavior, but provide examples to help guide our community in thinking through how to respond when we experience these types of behavior, whether directed at ourselves or others.
 
@@ -38,7 +38,7 @@ Here are a few examples of unacceptable behavior:
 * Retaliating against anyone who files a formal complaint that someone has violated these codes or laws.
 
 
-### Credits
+## Credits
 
 18F is greatly appreciative of the multiple sources that we drew from to build this Code of Conduct, including:
 
