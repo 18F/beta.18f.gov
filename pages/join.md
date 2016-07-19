@@ -5,9 +5,9 @@ layout: default-intro
 lead: Now’s the time to get involved in transforming how the federal government does technology. Join the digital services movement.
 ---
 
-We’re looking for candidates passionate about our mission, with
-top-notch software development, design, content, and operations skills
-to match. We’re a remote-first team with offices in Washington D.C, New
+### We’re looking for candidates passionate about our mission, with top-notch software development, design, content, and operations skills to match.
+
+We’re a remote-first team with offices in Washington D.C, New
 York City, Chicago, and San Francisco, but we also have teammates working in 26 other cities all over the country. [Read more about how
 we make our distributed model
 work](https://18f.gsa.gov/2015/10/15/best-practices-for-distributed-teams/).
