@@ -3,18 +3,58 @@
 ---
 
 @charset "utf-8";
+//18F site variables
+
+@import "_components/variables";
 
 // USWDS
 // ==========================
 
-@import "_libs/wds/stylesheets/all";
+//@import "_libs/wds/stylesheets/all";
 
+
+@import '_libs/wds/stylesheets/lib/bourbon';
+@import '_libs/wds/stylesheets/lib/neat';
+@import '_libs/wds/stylesheets/lib/normalize';
+
+
+// Core -------------- //
+
+@import '_libs/wds/stylesheets/core/defaults';
+@import '_libs/wds/stylesheets/core/fonts';
+@import '_libs/wds/stylesheets/core/base';
+@import '_libs/wds/stylesheets/core/grid-settings';
+@import '_libs/wds/stylesheets/core/grid';
+@import '_libs/wds/stylesheets/core/utilities';
+
+
+// Elements -------------- //
+// Styles basic HTML elements
+
+@import '_libs/wds/stylesheets/elements/buttons';
+@import '_libs/wds/stylesheets/elements/figure';
+@import '_libs/wds/stylesheets/elements/inputs';
+@import '_libs/wds/stylesheets/elements/labels';
+@import '_libs/wds/stylesheets/elements/list';
+@import '_libs/wds/stylesheets/elements/table';
+@import '_libs/wds/stylesheets/elements/typography';
+
+
+// Components -------------- //
+
+@import '_libs/wds/stylesheets/components/accordions';
+@import '_libs/wds/stylesheets/components/alerts';
+@import '_libs/wds/stylesheets/components/disclaimer';
+@import '_libs/wds/stylesheets/components/footer';
+@import '_libs/wds/stylesheets/components/forms';
+@import '_libs/wds/stylesheets/components/search';
+@import '_libs/wds/stylesheets/components/sidenav';
+@import '_libs/wds/stylesheets/components/skipnav';
 
 // 18F site components
 // ==========================
 
-@import "_fonts/google-fonts";
-@import "_components/variables"; // TODO: fix this so variables work properly
+@import "_fonts/google-fonts"; 
 @import "_components/typography";
 @import "_components/code-samples";
 @import "_components/buttons";
