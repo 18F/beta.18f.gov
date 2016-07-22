@@ -28,8 +28,8 @@ jekyll-archives:
 
 collections:
   team:
-    permalink: /team/:name/
     output: true
+    permalink: /team/:name/
   cards:
     output: true
     permalink: /card/:name/
@@ -50,9 +50,9 @@ defaults:
     layout: default-intro
  -
   scope:
-    path: "team"
+    path: "_team"
   values:
-    layout: page
+    layout: default-profile
 
 forms:
 - type: newsletter
