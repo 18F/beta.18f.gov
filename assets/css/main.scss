@@ -3,15 +3,12 @@
 ---
 
 @charset "utf-8";
-//18F site variables
 
+//18F site variables
 @import "_components/variables";
 
 // USWDS
-// ==========================
-
-//@import "_libs/wds/stylesheets/all";
-
+// ========================== //TODO change import when !default fix releases
 
 @import '_libs/wds/stylesheets/lib/bourbon';
 @import '_libs/wds/stylesheets/lib/neat';
