@@ -7,7 +7,11 @@
   By
   {% for author in authors %}
     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <a class="post-author" href="" itemprop="name">{{ author | lookup:"authors,full_name"}}</a>
+      {% if site.team.{{author}} %}
+        <a class="post-author" href="{{ site.baseurl }}/team/{{ author }}/" itemprop="name">{{ author | lookup:"authors,full_name"}}</a>
+        {% else %}
+        <span class="post-author" itemprop="name">{{ author | lookup:"authors,full_name"}}</span>
+      {% endif %}
     </span>
     {% assign authorCount = authors | size %}
     {% if authorCount > 1 %}
