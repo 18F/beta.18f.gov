@@ -1,7 +1,6 @@
 ---
 permalink: /april-fools/
 title: 18F's April Fools Jokes
-layout: bare
 ---
 # {{ page.title }}
 

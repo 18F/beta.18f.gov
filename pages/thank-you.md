@@ -1,5 +1,4 @@
 ---
-layout: bare
 permalink: /thank-you/
 ---
 
