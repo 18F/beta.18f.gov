@@ -32,27 +32,7 @@ a {
 // ==========================
 
 // *TODO*: Fix this so we don't have to re-call these when there are new variables
-h1 {
-  @include h1();
-}
 
-h2 {
-  @include h2();
-}
-
-h3 {
-  @include h3();
-}
-
-// h4 is the same
-
-h5 {
-  @include h5();
-}
-
-h6 {
-  @include h6();
-}
 
 .usa-sidenav-list  {
   a {

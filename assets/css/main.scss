@@ -4,6 +4,12 @@
 
 @charset "utf-8";
 
+// 18F site variables
+// ==========================
+
+@import "_components/variables";
+
+
 // USWDS
 // ==========================
 
@@ -14,7 +20,6 @@
 // ==========================
 
 @import "_fonts/google-fonts";
-@import "_components/variables"; // TODO: fix this so variables work properly
 @import "_components/typography";
 @import "_components/code-samples";
 @import "_components/buttons";
