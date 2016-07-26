@@ -1,7 +1,8 @@
 ---
 title: Join 18F
 permalink: /join/
-layout: default-intro
+layout: default-image
+image: /assets/img/page-feature/join.jpg
 lead: Now’s the time to get involved in transforming how the federal government does technology. Join the digital services movement.
 ---
 
