@@ -1,11 +1,11 @@
 // Typography
-$h1-font-size:       rem(36px);
-$h2-font-size:       rem(32px);
-$h3-font-size:       rem(24px);
-$h5-font-size:       rem(14px);
-$h6-font-size:       rem(12px);
+$h1-font-size:       3.6rem;
+$h2-font-size:       3.2rem;
+$h3-font-size:       2.4rem;
+$h5-font-size:       1.4rem;
+$h6-font-size:       1.2rem;
 
-$tiny-font-size:     rem(12px);
+$tiny-font-size:     1.2rem;
 
 $font-sans:          'Nimbus Sans','Helvetica', 'Arial', sans-serif;
 $font-monospace:     Consolas, Monaco, "Andale Mono", monospace;
@@ -21,6 +21,7 @@ $color-base:         #1F2E4A;
 $color-bright-hover: #00A7CE;
 $color-medium-hover: #00547A;
 
+$color-gray-lightest: #f1f1f1; // Adding bc used in our $border-light in this file.
 
 // Spacing
 $section-margins:    6rem;

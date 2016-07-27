@@ -2,7 +2,6 @@
 // ==========================
 
 body {
-  font-family: $font-sans;
   overflow-x: hidden;
 }
 
@@ -12,7 +11,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-base;
   font-family: $font-sans;
 }
 
@@ -21,41 +19,5 @@ a {
 
   &:hover {
     color: $color-medium-hover;
-  }
-
-  &:visited {
-//    color: $color-medium;
-  }
-}
-
-// TODO: fix variables issues
-// ==========================
-
-// *TODO*: Fix this so we don't have to re-call these when there are new variables
-h1 {
-  @include h1();
-}
-
-h2 {
-  @include h2();
-}
-
-h3 {
-  @include h3();
-}
-
-// h4 is the same
-
-h5 {
-  @include h5();
-}
-
-h6 {
-  @include h6();
-}
-
-.usa-sidenav-list  {
-  a {
-    font-family: $font-sans;
   }
 }
