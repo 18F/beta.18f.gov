@@ -19,7 +19,13 @@
     }
   }
 
-  .usa-content {
-    @include padding(0 null);
+  .content-focus {
+    max-width: initial;
+  }
+
+  .section-list {
+    &:first-child {
+      padding-top: 0;
+    }
   }
 }
