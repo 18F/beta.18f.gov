@@ -1,5 +1,5 @@
 .page-how-we-work {
-  .usa-width-one-fourth {
+  .graphic-list-item {
     @include span-columns(6);
 
     &:nth-child(2n) {

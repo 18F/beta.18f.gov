@@ -23,25 +23,25 @@ and we publish any guidance we create for our staff.
 ### Our guides
 
 <div class="usa-grid-full graphic-row">
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/accessibility/">
       <img src="{{ site.baseurl }}/assets/img/guides/accessibility.svg" alt="">
       <p class="link-arrow-right">Accessibility</p>
     </a>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/frontend/">
       <img src="{{ site.baseurl }}/assets/img/guides/front-end.svg" alt="">
       <p class="link-arrow-right">Front end</p>
     </a>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/open-source-guide/">
       <img src="{{ site.baseurl }}/assets/img/guides/open-source.svg" alt="">
       <p class="link-arrow-right">Open source</p>
     </a>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/content-guide/">
       <img src="{{ site.baseurl }}/assets/img/guides/content.svg" alt="">
       <p class="link-arrow-right">Content</p>
@@ -50,25 +50,25 @@ and we publish any guidance we create for our staff.
 </div>
 
 <div class="usa-grid-full graphic-row">
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/lean-product-design/">
       <img src="{{ site.baseurl }}/assets/img/guides/lean-product-design.svg" alt="">
       <p class="link-arrow-right link-lean">Lean product design</p>
     </a>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://methods.18f.gov/">
       <img src="{{ site.baseurl }}/assets/img/guides/design-methods.svg" alt="">
       <p class="link-arrow-right">Design methods</p>
     </a>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/automated-testing-playbook/">
       <img src="{{ site.baseurl }}/assets/img/guides/automated-testing.svg" alt="">
       <p class="link-arrow-right">Automated testing</p>
     </a>
   </div>
-  <div class="usa-width-one-fourth">
+  <div class="graphic-list-item">
     <a class="graphic-list-link" href="https://pages.18f.gov/guides/">
       <img src="{{ site.baseurl }}/assets/img/guides/view-more.svg" alt="">
       <p class="link-arrow-right">View more</p>
