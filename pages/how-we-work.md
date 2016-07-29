@@ -24,7 +24,7 @@ and we publish any guidance we create for our staff.
 
 <div class="usa-grid-full graphic-row">
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/accessibility/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/accessibility.svg" alt="">
       </div>
@@ -32,7 +32,7 @@ and we publish any guidance we create for our staff.
     </a>
   </div>
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/frontend/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/front-end.svg" alt="">
       </div>
@@ -40,7 +40,7 @@ and we publish any guidance we create for our staff.
     </a>
   </div>
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/open-source-guide/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/open-source.svg" alt="">
       </div>
@@ -48,7 +48,7 @@ and we publish any guidance we create for our staff.
     </a>
   </div>
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/content-guide/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/content.svg" alt="">
       </div>
@@ -59,7 +59,7 @@ and we publish any guidance we create for our staff.
 
 <div class="usa-grid-full graphic-row">
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/lean-product-design/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/lean-product-design.svg" alt="">
       </div>
@@ -67,7 +67,7 @@ and we publish any guidance we create for our staff.
     </a>
   </div>
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://methods.18f.gov/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/design-methods.svg" alt="">
       </div>
@@ -75,7 +75,7 @@ and we publish any guidance we create for our staff.
     </a>
   </div>
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/automated-testing-playbook/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/automated-testing.svg" alt="">
       </div>
@@ -83,7 +83,7 @@ and we publish any guidance we create for our staff.
     </a>
   </div>
   <div class="usa-width-one-fourth">
-    <a class="graphic-list-link" href="#">
+    <a class="graphic-list-link" href="https://pages.18f.gov/guides/">
       <div class="graphic-list-icon">
         <img src="{{ site.baseurl }}/assets/img/guides/view-more.svg" alt="">
       </div>
