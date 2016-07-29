@@ -1,4 +1,32 @@
 .page-how-we-work {
+  .usa-width-one-fourth {
+    @include span-columns(6);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+    }
+  }
+
+  .graphic-row {
+    &:first-of-type {
+      @include media($medium-screen) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &:last-of-type {
+      .graphic-list-link {
+        @include media($medium-screen) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
   .graphic-list-link {
     @include margin(2rem null);
     @include media-link;
@@ -6,36 +34,17 @@
     width: 100%;
   }
 
-  .graphic-list-icon {
-    text-align: center;
-
-    img {
-      max-width: 6rem;
-    }
+  img {
+    max-width: 6rem;
   }
 
-  .graphic-row {
-    &:first-of-type {
-      @include media($large-screen) {
-        margin-bottom: 1rem;
-      }
-    }
-
-    &:last-of-type {
-      .graphic-list-link {
-        @include media($large-screen) {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
 
   .link-arrow-right {
     margin-top: 3rem;
   }
 
   .link-lean {
-    @include media($large-screen) {
+    @include media($medium-screen) {
       width: 10rem;
     }
   }
