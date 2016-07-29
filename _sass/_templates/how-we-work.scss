@@ -32,6 +32,14 @@
     @include media-link;
     text-decoration: none;
     width: 100%;
+
+    &:visited {
+      color: $color-medium;
+
+      &:hover {
+        color: $color-medium-hover;
+      }
+    }
   }
 
   img {
