@@ -54,6 +54,9 @@ defaults:
   values:
     layout: default-profile
 
+frontmatter_tests:
+  path: "tests/schema"
+
 forms:
 - type: newsletter
   heading: Sign up to receive updates from our team
@@ -84,6 +87,7 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.md
   - README.md
+  - vendor
 
 # jekyll plugins
 gems:
@@ -91,6 +95,7 @@ gems:
   - jekyll-archives
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-frontmatter-tests
 
 # Configuration for jekyll_pages_api_search plugin gem.
 jekyll_pages_api_search:
