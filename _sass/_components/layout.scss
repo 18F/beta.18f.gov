@@ -144,6 +144,12 @@
   max-width: 61rem;
 }
 
+.usa-grid {
+  &.content-focus {
+    max-width: 67rem; // 61rem + 6rem (site margins)
+  }
+}
+
 .usa-content {
   p:not(.usa-font-lead),
   h1,
