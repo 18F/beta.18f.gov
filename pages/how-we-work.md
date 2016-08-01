@@ -12,12 +12,7 @@ to working in the open, building accessible products, and deploying early and
 often.
 
 See exactly how we put all of those principles into practice by reading
-through our guides on [accessibility](https://pages.18f.gov/accessibility/),
-[CSS coding style](https://pages.18f.gov/frontend/css-coding-styleguide/),
-[open source projects](https://pages.18f.gov/open-source-guide/),
-[content](https://pages.18f.gov/content-guide/),
-[lean product design](https://pages.18f.gov/lean-product-design/), and
-[more](https://pages.18f.gov/guides/). We’re public about the standards we use,
+through our guides. We’re public about the standards we use,
 and we publish any guidance we create for our staff.
 
 ### Our guides
