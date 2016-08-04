@@ -74,7 +74,7 @@ title: Home
         </h3>
         <p>{{ post.excerpt }}</p>
         <p>
-          <a class="link-arrow-right post-link-continue_reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+          <a class="link-arrow-right post-link-continue_reading" href="{{ post.url | prepend: site.baseurl }}">Continue reading<span class="usa-sr-only">{{ post.title }}</span></a>
         </p>
       </article>
     </li>
