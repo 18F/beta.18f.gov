@@ -25,11 +25,11 @@
     }
 
     img {
-      @include margin($section-margins null);
+      @include margin($site-margins null);
     }
 
     figure {
-      @include margin($section-margins null);
+      @include margin($site-margins null);
       text-align: center; // center image if less than full width
 
       img {
