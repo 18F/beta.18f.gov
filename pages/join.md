@@ -1,11 +1,12 @@
 ---
 title: Join 18F
 permalink: /join/
-layout: default-intro
+layout: default-image
+image: /assets/img/page-feature/join.jpg
 lead: Now’s the time to get involved in transforming how the federal government does technology. Join the digital services movement.
 ---
 
-### We’re looking for candidates passionate about our mission, with top-notch software development, design, content, and operations skills to match.
+We’re looking for candidates passionate about our mission, with top-notch software development, design, content, and operations skills to match.
 
 We’re a remote-first team with offices in Washington D.C, New
 York City, Chicago, and San Francisco, but we also have teammates working in 26 other cities all over the country. [Read more about how

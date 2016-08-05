@@ -141,7 +141,13 @@
 
 .content-focus {
   @include margin($section-margins auto);
-  max-width: 61rem;
+  max-width: 64.063rem; // 8 column width at full screen
+}
+
+.usa-grid {
+  &.content-focus {
+    max-width: 70.563rem; // 64.063rem + 6rem (site margins)
+  }
 }
 
 .usa-content {

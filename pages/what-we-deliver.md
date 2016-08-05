@@ -6,7 +6,7 @@ lead: We help federal agencies build, buy, and share modern digital services to 
 ---
 
 <section class="usa-grid-full usa-section section-list">
-  <div class="usa-width-one-third">
+  <div class="usa-width-one-sixth">
     <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home-icons/custom-products.svg" alt="">
   </div>
   <div class="usa-width-two-thirds">
@@ -26,7 +26,7 @@ If your agency’s project has a digital component, our team of software develop
 </section>
 
 <section class="usa-grid-full usa-section section-list">
-  <div class="usa-width-one-third">
+  <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/innovative-ways.svg" alt="">
   </div>
   <div class="usa-width-two-thirds">
@@ -46,7 +46,7 @@ our team is excited to work with you. We can help you:
 </section>
 
 <section class="usa-grid-full usa-section section-list">
-  <div class="usa-width-one-third">
+  <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/government.svg" alt="">
   </div>
   <div class="usa-width-two-thirds">
@@ -67,7 +67,7 @@ actively improved to meet your needs. We can help you:
 </section>
 
 <section class="usa-grid-full usa-section section-list">
-  <div class="usa-width-one-third">
+  <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/path.svg" alt="">
   </div>
   <div class="usa-width-two-thirds">
@@ -87,7 +87,7 @@ you form new digital habits, and ultimately drive organizational culture change.
 </section>
 
 <section class="usa-grid-full usa-section section-list">
-  <div class="usa-width-one-third">
+  <div class="usa-width-one-sixth">
     <img src="{{ site.baseurl }}/assets/img/home-icons/modern-techniques.svg" alt="">
   </div>
   <div class="usa-width-two-thirds">
