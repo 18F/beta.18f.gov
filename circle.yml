@@ -1,0 +1,13 @@
+machine:
+  ruby:
+    2.2.3
+
+dependencies:
+  pre:
+    - bundle install
+    - bundle exec jekyll build
+
+test:
+  pre:
+    - bundle exec jekyll test
+    - bundle exec htmlproof --disable-external
