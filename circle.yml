@@ -7,8 +7,10 @@ dependencies:
   pre:
     - bundle install
     - bundle exec jekyll build
+    - npm install -g pa11y-crawl
 
 test:
   pre:
     - bundle exec jekyll test
     - bundle exec htmlproof _site --disable-external
+    - pa11y-crawl -d _site -s WCAG2AA
