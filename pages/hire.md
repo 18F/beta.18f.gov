@@ -1,11 +1,12 @@
 ---
 title: Hire 18F
 permalink: /hire/
-layout: default-intro
+layout: default-image
+image: /assets/img/page-feature/hire-us.jpg
 lead: Let’s work together to design services that empower your team, better serve the public, and tackle the big problems facing your agency.
 ---
 
-### We can work with you to explore and define a variety of problems, and then we can help you build or buy a solution.
+We can work with you to explore and define a variety of problems, and then we can help you build or buy a solution.
 
 Because of our limited resources, 18F is not able to take on every
 project that agencies propose. We select our projects through a
