@@ -13,5 +13,5 @@ dependencies:
 test:
   pre:
     - bundle exec jekyll test
-    - bundle exec htmlproof _site --disable-external --empty-alt-ignore
+    - bundle exec htmlproof _site --disable-external --empty-alt-ignore --allow-hash-href
     - pa11y-crawl -d _site -s WCAG2AA .

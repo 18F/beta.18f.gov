@@ -88,6 +88,7 @@ exclude:
   - LICENSE.md
   - README.md
   - vendor
+  - node_modules
 
 # jekyll plugins
 gems:
