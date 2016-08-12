@@ -55,14 +55,18 @@
 }
 
 .sliding-panel-close {
+  @include button-unstyled;
   float: right;
   height: $hit-area;
-  margin-right: -1.5rem;
+  margin: -1.2rem -1.5rem 2.4rem auto;
   text-align: center;
   width: $hit-area;
 
+  &:hover {
+    background-color: transparent;
+  }
+
   img {
-    margin-top: 1.6rem;
     width: 1.3rem;
   }
 }

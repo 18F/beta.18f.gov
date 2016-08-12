@@ -59,6 +59,7 @@ header[role=banner] {
 
 // scss-lint:disable PropertyCount
 .menu-btn {
+  @include button-unstyled;
   background-color: $color-medium;
   border-radius: $border-radius;
   color: $color-white;
