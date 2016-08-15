@@ -48,13 +48,10 @@ header[role=banner] {
 }
 
 .site-logo {
+  @include margin(1rem null);
   display: block;
-
-  img {
-    @include margin(1rem null);
-    float: left;
-    width: 4.4rem;
-  }
+  float: left;
+  width: 4.4rem;
 }
 
 // scss-lint:disable PropertyCount
