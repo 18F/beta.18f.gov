@@ -7,11 +7,8 @@ dependencies:
   pre:
     - bundle install
     - bundle exec jekyll build
-    - npm install -g pa11y-crawl
-    - sudo apt-get install jq
 
 test:
   pre:
     - bundle exec jekyll test
     - bundle exec htmlproof _site --disable-external --empty-alt-ignore --allow-hash-href
-    - pa11y-crawl -d _site -s WCAG2AA .
