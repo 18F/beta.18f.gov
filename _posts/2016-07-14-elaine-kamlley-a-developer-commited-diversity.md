@@ -2,7 +2,7 @@
 title: "Elaine Kamlley: A developer committed to diversity"
 authors:
 - melody
-tags: 
+tags:
 - staff profiles
 - 18f team
 - how we work
@@ -12,7 +12,7 @@ front-end developer and a member of our Outreach Team"
 description: "All throughout the summer, we’ll be profiling members
 across the 18F team. We’re starting with Elaine Kamlley, who is both a
 front-end developer and a member of our Outreach Team*.*"
-image: /assets/images/team/elaine.jpg
+image: /assets/img/team/elaine.jpg
 ---
 <figure class="align-right">
 	<img src="{{site.baseurl}}{{page.image}}" alt="Profile photo for Elaine Kamlley.">

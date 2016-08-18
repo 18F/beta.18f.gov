@@ -9,7 +9,7 @@ tags:
 - how we work
 excerpt: "Jacob Harris joined 18F in May of 2015 after nine years working as a developer at The New York Times. He currently works on the Micro-purchase Platform, which enables vendors to place bids on opportunities to deliver open source code that costs $3,500 or less."
 description: "Jacob Harris joined 18F in May of 2015 after nine years working as a developer at The New York Times. He currently works on the Micro-purchase Platform, which enables vendors to place bids on opportunities to deliver open source code that costs $3,500 or less."
-image: /assets/images/team/jacobharris.jpg
+image: /assets/img/team/jacobharris.jpg
 ---
 
 <figure class="align-right">

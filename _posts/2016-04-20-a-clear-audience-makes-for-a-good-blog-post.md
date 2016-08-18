@@ -9,7 +9,7 @@ tags:
 - content design
 excerpt: "The most important advice I give 18F staff while they’re working on a blog post is to define their audience as clearly and as narrowly as possible. This focus has helped us overcome numerous hurdles to publishing quality blog posts, and it’s also the part of our new Blogging Guide that I’m most excited about."
 description: "Read our new Blogging Guide to see our process, advice we give authors, and how we manage our blog using GitHub issues. "
-image: assets/blog/blogging-guide/blogging-metadata.jpg
+image: /assets/blog/blogging-guide/blogging-metadata.jpg
 ---
 
 The most important advice I give 18F staff while they’re working on a

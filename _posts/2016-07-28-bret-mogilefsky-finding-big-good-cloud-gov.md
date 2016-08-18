@@ -9,7 +9,7 @@ tags:
 - cloud.gov
 excerpt: "Bret Mogilefsky spent most of his career working in the game development industry. He came to the government seeking the best way he could have a big impact and do big good."
 description: "Bret Mogilefsky spent most of his career working in the game development industry. He came to the government seeking the best way he could have a big impact and do big good."
-image: /assets/images/team/bret.jpg
+image: /assets/img/team/bret.jpg
 ---
 *All throughout the summer, we’ll be profiling members across the 18F
 team. Bret Mogilefsky joined 18F in July of 2015 after a long and
@@ -21,7 +21,7 @@ scalability.*
 
 
 <aside class="pquote">
-	<img class="pquote-img" src="{{site.baseurl }}/assets/images/team/bret.jpg" alt="Bret Mogilefsky">
+	<img class="pquote-img" src="{{site.baseurl }}{{ page.image }}" alt="Bret Mogilefsky">
 	<blockquote>
 		<p>"It was the best way I could have an impact and do big good. I mean that in caps, DO BIG GOOD — I wanted to have the biggest possible impact in a good way."</p>
 	</blockquote>

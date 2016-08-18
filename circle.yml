@@ -11,4 +11,4 @@ dependencies:
 test:
   pre:
     - bundle exec jekyll test
-    - bundle exec htmlproof _site --disable-external --empty-alt-ignore --allow-hash-href
+    - bundle exec htmlproofer _site --disable-external --allow-hash-href --empty-alt-ignore --url-ignore 18f@gsa.gov
