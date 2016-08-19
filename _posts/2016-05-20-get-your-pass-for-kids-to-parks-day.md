@@ -11,10 +11,8 @@ description: "May 21 is Kids to Park Day— a day organized by the National Park
 image: /assets/blog/every-kid-in-a-park/glacier-park.jpg
 ---
 
-<!--
 [![A mountain overlooking a lake in Glacier National
 Park]({{site.baseurl}}/assets/blog/every-kid-in-a-park/glacier-park.jpg)](https://www.flickr.com/photos/glaciernps/23195417702/in/faves-42687493@N06/)
--->
 
 May 21 is Kids to Parks Day, an effort to encourage kids to explore
 nature, learn, and play.

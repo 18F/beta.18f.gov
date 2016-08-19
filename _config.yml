@@ -1,6 +1,6 @@
 # Site settings
 title: "18F: Digital service delivery"
-description: "A fresh start for 18f.gsa.gov"
+description: "18F builds effective, user-centric digital services focused on the interaction between government and the people and businesses it serves."
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: pretty
 url: "https://18f.gsa.gov" # the base hostname & protocol for your site
@@ -54,6 +54,9 @@ defaults:
   values:
     layout: default-profile
 
+frontmatter_tests:
+  path: "tests/schema"
+
 forms:
 - type: newsletter
   heading: Sign up to receive updates from our team
@@ -77,13 +80,19 @@ footer:
   text: This site was built using <a href="https://federalist.18f.gov/" target="_blank">Federalist, from 18F</a>. # Change to a tag line for your agency
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+highlighter: rouge
+redcarpet:
+  syntax_highlighter: rouge
+  extensions:
+  - with_toc_data
+
 include:
   - _navigation.json
 exclude:
-  - CONTRIBUTING.md
-  - LICENSE.md
   - README.md
+  - vendor
+  - node_modules
 
 # jekyll plugins
 gems:
