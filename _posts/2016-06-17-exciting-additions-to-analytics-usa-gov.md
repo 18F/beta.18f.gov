@@ -16,7 +16,7 @@ data pages for a total of 25 major federal agencies. Additionally, the
 page to download aggregated data for all participating sites is now
 analytics.usa.gov/data."
 image: /assets/blog/dap/analytics-homepage-2016.png
-image_hero: false
+hero: false
 ---
 
 *Originally published on [DigitalGov.gov](http://www.digitalgov.gov/2016/06/17/exciting-additions-to-analytics-usa-gov/).*
