@@ -2,7 +2,7 @@
 title: A story of an agile workshop
 date: '2015-02-11'
 layout: post
-image: /assets/blog/agile-workshop/workshop3.jpg
+image: /assets/blog/agile-workshop/workshop3.JPG
 
 tags:
 - agile
