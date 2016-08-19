@@ -30,7 +30,7 @@ header_border: true
             </span>
           </div>
           <div class="usa-width-one-third">
-            {% if post.image %}
+            {% if post.image.size > 0 %}
               <a class="media_link" href="{{ post.url | prepend: site.baseurl }}" title="link to post">
                 <img src="{{ site.baseurl }}{{ post.image }}" alt="">
                 <p class="usa-sr-only">continue reading</p>
