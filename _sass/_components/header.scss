@@ -29,6 +29,14 @@ header[role=banner] {
           span {
             border-bottom: $border-accent;
             padding-bottom: 1.4rem;
+
+            @-moz-document url-prefix() {
+              padding-bottom: 1.3rem; // Current nav link border highlight fix for Firefox
+            }
+
+            @media screen and (-webkit-min-device-pixel-ratio:0) {
+              padding-bottom: 1.45rem; // Current nav link border highlight fix for Safari
+            }
           }
         }
       }
