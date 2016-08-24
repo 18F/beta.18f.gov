@@ -11,6 +11,8 @@ Run each of the following steps to get the site up and running.
 3. `bundle install`
 4. `jekyll serve`
 
+To dramatically speed up rebuild times (from more than 20 seconds to around 5), you can also run `./serve` or `./build` for step 4. These are shorthand for a combination of commands that disable certain plugins. This is especially useful if you're drafting a blog post or formatting single pages.
+
 You should be able to see the site at: http://127.0.0.1:4000
 
 ## System security controls
