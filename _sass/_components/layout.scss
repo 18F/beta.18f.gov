@@ -50,6 +50,7 @@
 
   .section-heading {
     color: $color-bright;
+    display: inline;
     letter-spacing: 0.5px;
   }
 
@@ -124,7 +125,6 @@
   }
 
   .section-heading-alt {
-    display: inline;
     font-size: $h2-font-size;
   }
 
