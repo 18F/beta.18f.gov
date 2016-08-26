@@ -59,7 +59,10 @@ header[role=banner] {
   @include margin(1rem null);
   display: block;
   float: left;
-  width: 4.4rem;
+
+  img {
+    width: 4.4rem;
+  }
 }
 
 // scss-lint:disable PropertyCount
