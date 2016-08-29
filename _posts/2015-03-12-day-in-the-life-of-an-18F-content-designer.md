@@ -13,6 +13,7 @@ authors:
 - kate
 excerpt: "In preparation for our one-year anniversary, we at 18F are introducing a new blog feature — our Day in the Life Series. Once a month, a different team member will share the details of their typical day in the office. Up first is Kate Garklavs, Content Designer."
 description: "In preparation for our one-year anniversary, we at 18F are introducing a new blog feature — our Day in the Life Series. Once a month, a different team member will share the details of their typical day in the office. Up first is Kate Garklavs, Content Designer."
+hero: false
 ---
 
 <img alt="Kate Garklavs" src="{{ site.baseurl }}/assets/blog/day-in-life-content/kate.JPG" class="align-left" />
