@@ -57,20 +57,6 @@ defaults:
 frontmatter_tests:
   path: "tests/schema"
 
-forms:
-- type: newsletter
-  heading: Sign up to receive updates from our team
-  url: https://docs.google.com/forms/d/1Tsdm_2spbxWnmTFMrH5eHxpOAN9W4LB3eaMMXJ1N0rU/formResponse
-  button: Subscribe
-  privacypolicy: Your privacy and security are important to us, we'll only share your information as described in the <a href="http://www.gsa.gov/portal/content/116609">GSA Privacy and Security Notice</a>
-  fields:
-    - type: email
-      name: entry.1440502332
-      label: Email Address
-    - type: hidden
-      name: fbzx
-      value: -7861934959779167198
-
 footer:
   image: /assets/img/logos/18F-Logo-M.png
   email:
@@ -86,6 +72,7 @@ redcarpet:
   syntax_highlighter: rouge
   extensions:
   - with_toc_data
+  - tables
 
 include:
   - _navigation.json
